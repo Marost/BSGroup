@@ -1,0 +1,417 @@
+.m-aside-menu.m-aside-menu--skin-dark .m-menu__nav > .m-menu__item > .m-menu__heading .m-menu__link-text,
+.m-aside-menu.m-aside-menu--skin-dark .m-menu__nav > .m-menu__item > .m-menu__link .m-menu__link-text,
+.m-aside-menu.m-aside-menu--skin-dark .m-menu__nav > .m-menu__item .m-menu__submenu .m-menu__item > .m-menu__heading .m-menu__link-text,
+.m-aside-menu.m-aside-menu--skin-dark .m-menu__nav > .m-menu__item .m-menu__submenu .m-menu__item > .m-menu__link .m-menu__link-text,
+.m-aside-menu.m-aside-menu--skin-dark .m-menu__nav > .m-menu__item > .m-menu__heading .m-menu__link-icon,
+.m-aside-menu.m-aside-menu--skin-dark .m-menu__nav > .m-menu__item > .m-menu__link .m-menu__link-icon,
+.m-aside-menu.m-aside-menu--skin-dark .m-menu__nav > .m-menu__section .m-menu__section-text,
+.m-aside-menu.m-aside-menu--skin-dark .m-menu__nav > .m-menu__item > .m-menu__heading .m-menu__ver-arrow,
+.m-aside-menu.m-aside-menu--skin-dark .m-menu__nav > .m-menu__item > .m-menu__link .m-menu__ver-arrow,
+.m-aside-menu.m-aside-menu--skin-dark .m-menu__nav > .m-menu__item .m-menu__submenu .m-menu__item > .m-menu__heading .m-menu__ver-arrow,
+.m-aside-menu.m-aside-menu--skin-dark .m-menu__nav > .m-menu__item .m-menu__submenu .m-menu__item > .m-menu__link .m-menu__ver-arrow,
+.m-aside-menu.m-aside-menu--skin-dark .m-menu__nav > .m-menu__item.m-menu__item--open > .m-menu__heading .m-menu__ver-arrow,
+.m-aside-menu.m-aside-menu--skin-dark .m-menu__nav > .m-menu__item.m-menu__item--open > .m-menu__link .m-menu__ver-arrow{
+    color: #ffffff;
+}
+
+.m-brand.m-brand--skin-dark .m-brand__tools .m-brand__toggler span,
+.m-brand.m-brand--skin-dark .m-brand__tools .m-brand__toggler span::before,
+.m-brand.m-brand--skin-dark .m-brand__tools .m-brand__toggler span::after{
+    background-color: #ffffff;
+}
+
+.m-aside-menu.m-aside-menu--skin-dark .m-menu__nav > .m-menu__item.m-menu__item--active > .m-menu__heading .m-menu__link-text,
+.m-aside-menu.m-aside-menu--skin-dark .m-menu__nav > .m-menu__item.m-menu__item--active > .m-menu__link .m-menu__link-text,
+.m-aside-menu.m-aside-menu--skin-dark .m-menu__nav > .m-menu__item.m-menu__item--active > .m-menu__heading .m-menu__link-icon,
+.m-aside-menu.m-aside-menu--skin-dark .m-menu__nav > .m-menu__item.m-menu__item--active > .m-menu__link .m-menu__link-icon,
+.m-aside-menu.m-aside-menu--skin-dark .m-menu__nav > .m-menu__item .m-menu__submenu .m-menu__item.m-menu__item--active > .m-menu__heading .m-menu__link-text,
+.m-aside-menu.m-aside-menu--skin-dark .m-menu__nav > .m-menu__item .m-menu__submenu .m-menu__item.m-menu__item--active > .m-menu__link .m-menu__link-text{
+    color: #c54e6f;
+}
+
+.m-dropdown.m-dropdown--header-bg-fill .m-dropdown__header{
+    background-color: #2c2e3e;
+}
+
+.form-control[readonly],
+.form-control,
+.select2-container--default .select2-selection--multiple,
+.select2-container--default .select2-selection--single{
+    border-color: #b7b7b7;
+}
+
+.m-portlet .m-portlet__head{
+    height: 4rem;
+}
+
+.m-form .m-form__actions{
+    padding: 10px;
+}
+
+.m-datatable.m-datatable--default > .m-datatable__table > .m-datatable__head .m-datatable__row > .m-datatable__cell > span,
+.m-datatable.m-datatable--default > .m-datatable__table > .m-datatable__body .m-datatable__row > .m-datatable__cell > span,
+.m-datatable.m-datatable--default > .m-datatable__table > .m-datatable__foot .m-datatable__row > .m-datatable__cell > span{
+    overflow: initial;
+}
+
+.m-datatable__row:nth-child(2n+2) {
+    background-color: #faf9fc;
+}
+
+.alert.alert-danger ul{
+    margin-bottom: 0;
+}
+
+.form-group.m-form__group img{
+    width: 100%;
+}
+
+.text-center{
+    text-align: center;
+}
+
+#sortable.m-accordion .m-accordion__item .m-accordion__item-head .m-accordion__item-title{
+    font-size: 1rem;
+}
+
+#sortable.m-accordion .m-accordion__item .m-accordion__item-head{
+    padding: 0.5rem 2rem;
+}
+
+.m-widget3 .m-widget3__user-img i{
+    font-size: 2.5rem;
+}
+
+.m-demo .m-btn--icon > span > span{
+    text-transform: uppercase;
+}
+
+.m-widget3 .m-widget3__item .m-widget3__header .m-widget3__user-img{
+    margin-bottom: 0.5rem;
+}
+
+.m-portlet.m-portlet--creative .m-portlet__head{
+    height: 0;
+}
+
+.m-demo{
+    background: none;
+}
+
+.m-demo .m-demo__preview{
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.m-card-user .m-card-user__details .m-card-user__name{
+    font-size: 1rem;
+}
+
+.m-card-user .m-card-user__details .m-card-user__email{
+    font-size: 0.8rem;
+}
+
+.m-subheader .dropdown{
+    display: inline-block;
+}
+
+/* IMAGENES */
+.m-list-pics{
+    text-align: center;
+}
+
+.m-list-pics .imagen {
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    position: relative;
+    float: left;
+}
+
+.m-list-pics .imagen > img {
+    width: 10rem;
+}
+
+.m-list-pics .imagen > .opciones{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.2);
+    padding-top: 10px;
+}
+
+.m-list-pics .imagen > .opciones > a {
+    display: inline-block;
+    margin: 0 0.8rem;
+}
+
+.m-list-pics .imagen > .opciones > a > i{
+    color: #ffffff;
+    font-size: 1.7rem;
+}
+
+.m-list-pics .imagen > .opciones > a.handle{
+    cursor: move;
+}
+
+#listFotos{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-table;
+}
+
+#listFotos .ui-state-highlight{
+    width: 10rem;
+    height: 10rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    float: left;
+    border: 2px solid #ead138;
+    background-color: rgba(255, 255, 0, 0.24);
+}
+
+/*------------------------------------------
+ MENU
+ -----------------------------------------*/
+#menu-lista .m-accordion.m-accordion--solid .m-accordion__item .m-accordion__item-head.collapsed{
+    background-color: #ffffff;
+}
+
+#menu-lista .m-accordion.m-accordion--bordered .m-accordion__item,
+#menu-lista .m-accordion.m-accordion--default .m-accordion__item{
+    border-color: #9E9E9E;
+}
+
+
+/**
+ * Nestable
+ */
+.dd-list {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.dd-list .dd-list {
+    padding-left: 30px;
+}
+.dd-collapsed .dd-list {
+    display: none;
+}
+
+.dd-item,
+.dd-empty,
+.dd-placeholder {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    min-height: 20px;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.dd-handle {
+    display: block;
+    height: 30px;
+    margin: 5px 0;
+    cursor: move;
+    padding: 5px 10px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 400;
+    border: 1px solid #ccc;
+    background: #fafafa;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.dd-handle:hover {
+    color: #2ea8e5;
+    background: #fff;
+}
+
+.dd-item > button {
+    z-index: 100;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    float: left;
+    width: 25px;
+    height: 20px;
+    margin: 7px 0;
+    padding: 0;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    border: 0;
+    background: transparent;
+    font-size: 10px;
+    line-height: 1;
+    text-align: center;
+    font-weight: bold;
+}
+.dd-item > button:before {
+    content: '\f067';
+    display: block;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    text-indent: 0;
+    font-family: 'FontAwesome', sans-serif;
+}
+.dd-item > button[data-action="collapse"]:before {
+    content: '\f068';
+}
+
+.dd-placeholder,
+.dd-empty {
+    margin: 5px 0;
+    padding: 0;
+    min-height: 30px;
+    background: #f2fbff;
+    border: 1px dashed #b6bcbf;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.dd-empty {
+    border: 1px dashed #bbb;
+    min-height: 100px;
+    background-color: #e5e5e5;
+    background-size: 60px 60px;
+    background-position: 0 0, 30px 30px;
+}
+
+.dd-dragel {
+    position: absolute;
+    pointer-events: none;
+    z-index: 9999;
+}
+.dd-dragel > .dd-item .dd-handle {
+    margin-top: 0;
+}
+.dd-dragel .dd-handle {
+    -webkit-box-shadow: 2px 4px 6px 0 rgba(0,0,0,.1);
+    box-shadow: 2px 4px 6px 0 rgba(0,0,0,.1);
+}
+
+.dd-hover > .dd-handle {
+    background: #2ea8e5 !important;
+}
+
+/* Nestable Draggable Handles */
+.dd3-content {
+    display: block;
+    height: 30px;
+    margin: 5px 0;
+    padding: 5px 100px 5px 40px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 400;
+    border: 1px solid #ccc;
+    background: #fafafa;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.dd3-content:hover {
+    color: #2ea8e5;
+    background: #fff;
+}
+.dd3-content .opciones{
+    position: absolute;
+    right: 10px;
+    top: 3px;
+}
+.dd3-content .opciones a{
+    text-decoration: none;
+    color: #000;
+}
+
+.dd3-content .opciones a i{
+    font-size: 22px;
+}
+
+.dd-dragel > .dd3-item > .dd3-content {
+    margin: 0;
+}
+
+.dd3-item > button {
+    margin-left: 30px;
+}
+
+.dd3-handle {
+    position: absolute;
+    margin: 0;
+    left: 0;
+    top: 0;
+    cursor:move;
+    width: 30px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    border: 1px solid #aaa;
+    background: #ddd;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.dd3-handle:before {
+    content: '≡';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 3px;
+    width: 100%;
+    text-align: center;
+    text-indent: 0;
+    color: #fff;
+    font-size: 20px;
+    font-weight: normal;
+}
+.dd3-handle:hover {
+    background: #ddd;
+}
+
+/* ESTILOS PARA EDITOR */
+.sub_item{
+    position: relative;
+}
+
+.item-add{
+    position: absolute;
+    top: 0;
+    right: 20px;
+    cursor: pointer;
+}
+
+.item-move{
+    position: absolute;
+    top: 0;
+    left: 20px;
+    cursor: move;
+}
+
+ul.redactor-icons-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.redactor-icons-list li {
+    display: inline-block;
+    background-color: #007dff;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+ul.redactor-icons-list li span {
+    font-size: 35px;
+    color: #ffffff;
+}

@@ -1,0 +1,39 @@
+.m-login.m-login--2.m-login--signin .m-login__forget-password{
+    display: block;
+}
+
+.m-login.m-login--2.m-login-2--skin-3 .m-login__container .m-login__head .m-login__title,
+.m-login.m-login--2.m-login-2--skin-3 .m-login__container .m-login__head .m-login__desc{
+    color: #ffffff;
+}
+
+.btn-focus,
+.btn-outline-focus:hover{
+    background-color: #c54e6f;
+    border-color: #c54e6f;
+}
+
+.btn-focus:hover{
+    background-color: #b53256;
+    border-color: #b53256;
+    -webkit-box-shadow: 0 5px 10px 2px rgba(197, 78, 111, 0.19) !important;
+    -moz-box-shadow: 0 5px 10px 2px rgba(197, 78, 111, 0.19) !important;
+    box-shadow: 0 5px 10px 2px rgba(197, 78, 111, 0.19) !important;
+}
+
+.btn-outline-focus{
+    color: #c54e6f;
+    border-color: #c54e6f;
+}
+
+.btn-outline-focus.m-btn--air,
+.btn-focus.m-btn--air,
+.m-btn--gradient-from-focus.m-btn--air{
+    -webkit-box-shadow: 0 5px 10px 2px rgba(197, 78, 111, 0.19) !important;
+    -moz-box-shadow: 0 5px 10px 2px rgba(197, 78, 111, 0.19) !important;
+    box-shadow: 0 5px 10px 2px rgba(197, 78, 111, 0.19) !important;
+}
+
+.alert.alert-danger ul{
+    margin-bottom: 0;
+}
