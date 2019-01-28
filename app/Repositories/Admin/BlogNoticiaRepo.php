@@ -48,7 +48,7 @@ class BlogNoticiaRepo extends BaseRepo{
                                 ->where('publicar', 1)
                                 ->where('visibilidad', 1)
                                 ->orderBy('published_at', 'desc')
-                                ->paginate(2);
+                                ->paginate(3);
     }
 
     //BUSCAR NOTICIA

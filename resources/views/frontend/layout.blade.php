@@ -18,12 +18,12 @@
 	<link rel="icon" sizes="96x96" href="{{ asset('favicon.png') }}">
 
 	{{-- Enlace externos --}}
-	{!! Html::style('https://allyoucan.cloud/cdn/icofont/1.0.0beta/css/icofont.css', ['crossorigin' => 'anonymous']) !!}
-	{!! Html::style('https://s3.amazonaws.com/icomoon.io/114779/Socicon/style.css?u8vidh') !!}
-	{!! Html::style('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css') !!}
+	<link href="/css/bootstrap.css" rel="stylesheet">
+	<link href="/css/style.css" rel="stylesheet">
+	<link href="/css/responsive.css" rel="stylesheet">
 
 	{{-- Enlaces Internos --}}
-	{!! Html::style('css/estilos.css') !!}
+	
 
 	@yield('contenido_header')
 
@@ -61,72 +61,206 @@
 </head>
 <body>
 
-	<nav class="navegacion-contenedor">
-		<ul class="navegacion-contenedor__lista">
-			@foreach ($conf_menus as $key => $item)
-				@if ($item['parent'] != 0)
-					@break
-				@endif
-				@include('partials.menu-item', ['item' => $item])
-			@endforeach
-		</ul>
-	</nav>
+	<div id="app" class="page-wrapper">
 
-	<div class="navegacion-redes">
-		<div class="navegacion-redes__contenedor">
-			<div class="redes-before"><a href="#" class="redes icon-sharp"></a></div>
-			@foreach($conf_redes as $red)
-				<div class="redes-before {{ strtolower($red->valor) }}">
-					<a target="_blank" href="{{ $red->enlace }}" class="redes {{ $red->icono }}"></a>
+		<div class="preloader"></div>
+
+		<header class="main-header">
+
+			<!-- header top -->
+			<div class="header-top light black-bg-3">
+				<div class="container clearfix">
+					<!--Top Left-->
+					<div class="top-left pull-left">
+						<ul class="links-nav clearfix">
+							<li><i class="fa fa-envelope-o"></i>consultas@bsgroup.com.pe</li>
+							<li><i class="fa fa-phone"></i>(51-1) 7156577 | (51-1) 7156578</li>
+						</ul>
+					</div>
+
+					<!--Top Right-->
+					<div class="top-right pull-right">
+						<div class="social-links clearfix">
+							<a href="https://www.facebook.com/BSGroup.Peru"><span class="fa fa-facebook-f"></span></a>
+						</div>
+					</div>
 				</div>
-			@endforeach
-		</div>
+			</div>
+
+			<!--Header-Upper-->
+			<div class="header-upper style-three dark-color">
+				<div class="container clearfix">
+
+					<div class="float-left logo-outer">
+						<div class="logo"><a href="/"><img src="images/logo.png" alt="" title=""></a></div>
+					</div>
+
+					<div class="float-right upper-right clearfix">
+
+						<div class="nav-outer clearfix">
+							<!-- Main Menu -->
+							<nav class="main-menu navbar-expand-lg">
+								<div class="navbar-header">
+									<!-- Toggle Button -->
+									<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+								</div>
+
+								<div class="navbar-collapse collapse clearfix">
+									<ul class="navigation clearfix">
+										<li><a href="#">Inicio</a></li>
+										<li><a href="#nosotros">Nosotros</a></li>
+										<li><a href="#servicios">Servicios</a></li>
+										<li><a href="blog.html">Blog</a></li>
+										<li><a href="#contacto">Contacto</a></li>
+									</ul>
+								</div>
+							</nav>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+			<!--End Header Upper-->
+
+			<!--Sticky Header-->
+			<div class="sticky-header">
+				<div class="container clearfix">
+					<!--Logo-->
+					<div class="logo float-left">
+						<a href="/" class="img-responsive"><img src="images/logo.png" alt="" title=""></a>
+					</div>
+
+					<!--Right Col-->
+					<div class="right-col float-right">
+						<!-- Main Menu -->
+						<nav class="main-menu navbar-expand-lg">
+							<div class="navbar-collapse collapse clearfix">
+								<ul class="navigation clearfix">
+									<li><a href="#">Inicio</a></li>
+									<li><a href="#nosotros">Nosotros</a></li>
+									<li><a href="#servicios">Servicios</a></li>
+									<li><a href="blog.html">Blog</a></li>
+									<li><a href="#contacto">Contacto</a></li>
+								</ul>
+							</div>
+						</nav><!-- Main Menu End-->
+					</div>
+
+				</div>
+			</div>
+			<!--End Sticky Header-->
+		</header>
+
+		@yield('contenido_body')
+
+		<footer class="main-footer">
+			<div class="container">
+
+				<!--Widgets Section-->
+				<div class="widgets-section">
+					<div class="row clearfix">
+						<!--Big Column-->
+						<div class="big-column col-lg-8">
+							<div class="row clearfix">
+
+								<!--Footer Column-->
+								<div class="footer-column col-lg-7 col-md-7">
+									<div class="footer-widget about-widget">
+										<div class="footer-logo">
+											<figure>
+												<a href="/"><img src="images/footer-logo.png" alt=""></a>
+											</figure>
+										</div>
+										<div class="widget-content">
+											<div class="text">
+												Business Solutions Group es una firma de asesoría y consultoría empresarial, que brinda soluciones efectivas para la gestión exitosa de las empresas.
+											</div>
+											<ul class="social-icon-three">
+												<li><a target="_blank" href="https://www.facebook.com/BSGroup.Peru"><i class="fa fa-facebook"></i></a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<!--Footer Column-->
+								<div class="footer-column col-lg-5 col-md-5">
+									<div class="footer-widget services-widget">
+										<h2 class="widget-title">Opciones</h2>
+										<div class="widget-content">
+											<ul class="list">
+												<li><a href="#">Inicio</a></li>
+												<li><a href="#">Nosotros</a></li>
+												<li><a href="#">Servicios</a></li>
+												<li><a href="#">Blog</a></li>
+												<li><a href="#">Contacto</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!--Big Column-->
+						<div class="big-column col-lg-4">
+							<div class="row clearfix">
+
+								<!--Footer Column-->
+								<div class="footer-column col-lg-9 col-md-9">
+									<div class="footer-widget services-widget">
+										<h2 class="widget-title">Servicios</h2>
+										<div class="widget-content">
+											<ul class="list">
+												<li><a href="#">Gestión Estratégica</a></li>
+												<li><a href="#">Gestion Financiera y Tributaria</a></li>
+												<li><a href="#">Gestión del Talento Humano</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--Footer Bottom-->
+			<div class="footer-bottom">
+				<div class="container">
+					<div class="copyright-text">
+						<p>&copy;  2018 Todos los derechos reservados.</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
 	</div>
 
+	<button class="scroll-top scroll-to-target" data-target="html">
+		<span class="fa fa-angle-up"></span>
+	</button>
 
-@yield('contenido_body')
-
-<footer class="footer footer-efecto">
-<div class="footer-contenedor">
-	<div class="footer_nexos footer_column">
-		<ul>
-			<li class="title">{{ $conf_web_titulo }}</li>
-			<li class="info">{{ $conf_footer }}</li>
-		</ul>
-		<ul class="column_redes">
-			<li class="column_redes__title">Síguenos</li>
-			@foreach($conf_redes as $red)
-				<li class="iconos"><a href="{{ $red->enlace }}" target="_blank" class="redes"><span class="{{ $red->icono }}"></span></a></li>
-			@endforeach
-		</ul>
-
-	</div>
-	<div class="footer_informacion footer_column">
-		<ul>
-			<li class="title">Información de Contacto</li>
-			<li><span class="icofont {{ $conf_web_direccion->icono }}"></span> {{ $conf_web_direccion->valor }}</li>
-			<li><span class="icofont {{ $conf_web_telefono->icono }}"></span> {{ $conf_web_telefono->valor }}</li>
-			<li><span class="icofont {{ $conf_web_email->icono }}"></span> {{ $conf_web_email->valor }}</li>
-		</ul>
-	</div>
-	<div class="footer_mapa footer_column">
-		<ul>
-			<li class="title">Mapa del Sitio</li>
-			<li><a href="/">Inicio</a></li>
-		</ul>
-	</div>
-</div>
-<div class="footer-redes">
-	<p class="footer-redes__titulo">Copyright © 2018 - {{ $conf_web_titulo }} - Todos los derechos reservados.</p>
-</div>
-</footer>
 
 {{-- Enlaces Externos --}}
-{!! Html::script('https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js') !!}
-{!! Html::script('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js') !!}
-{!! Html::script('https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js') !!}
+<script src="/js/jquery.js"></script>
+<script src="/js/popover.js"></script>
+<script src="/js/bootstrap.min.js"></script>
 
-{!! Html::script('js/forms.js') !!}
+<script src="/js/wow.js"></script>
+<script src="/js/owl.js"></script>
+<script src="/js/validate.js"></script>
+<script src="/js/mixitup.js"></script>
+<script src="/js/isotope.js"></script>
+<script src="/js/appear.js"></script>
+<script src="/js/jquery.fancybox.js"></script>
+
+<!-- Custom script -->
+<script src="/js/script.js"></script>
+{!! Html::script(mix('js/forms.js')) !!}
 
 {!! $conf_script !!}
 

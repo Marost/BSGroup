@@ -37,16 +37,8 @@ class WidgetController extends Controller
     {
         switch ($widget)
         {
-            case 'clientes':
-                $rows = $this->configuracionRepo->listaItems('clientes');
-                break;
-
             case 'noticias':
                 $rows = $this->noticiaRepo->listaNoticiasHome();
-                break;
-
-            case 'testimonios':
-                $rows = $this->configuracionRepo->listaItems('testimonios');
                 break;
         }
 

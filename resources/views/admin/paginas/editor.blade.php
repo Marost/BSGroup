@@ -143,7 +143,11 @@
 		components: '',
         style: '',
 		canvas: {
-            styles: [],
+            styles: [
+                '/css/bootstrap.css',
+                '/css/style.css',
+                '/css/responsive.css',
+			],
 			scripts: []
 		},
         plugins: ['gjs-preset-webpage','gjs-aviary'],
