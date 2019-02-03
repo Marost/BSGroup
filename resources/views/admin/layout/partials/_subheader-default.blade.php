@@ -110,6 +110,16 @@
 					<span><i class="la la-reorder"></i><span>Ordenar</span></span>
 				</a>
 			@endif
+
+			@if(Request::is('*servicios*'))
+				<a href="{{ route('admin.servicios.index') }}" class="btn btn-outline-brand m-btn m-btn--icon m-btn--outline-2x">
+					<span><i class="la la-list"></i><span>Listar registros</span></span>
+				</a>
+
+				<a href="{{ route('admin.servicios.create') }}" class="btn btn-outline-brand m-btn m-btn--icon m-btn--outline-2x">
+					<span><i class="la la-plus-circle"></i><span>Nuevo registro</span></span>
+				</a>
+			@endif
 		</div>
 	</div>
 </div>

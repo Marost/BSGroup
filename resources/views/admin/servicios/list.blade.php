@@ -1,7 +1,7 @@
 @extends('admin.layout.index')
 
 @section('contenido_titulo')
-	Páginas
+	Servicios
 @stop
 
 @section('contenido_header')
@@ -27,7 +27,6 @@
 					<thead>
 						<tr>
 							<th>Titulo</th>
-							<th>URL</th>
 							<th class="text-center">Estado</th>
 							<th class="text-center">Acciones</th>
 						</tr>
@@ -42,12 +41,8 @@
 							'<div class="m-badge m-badge--success m-badge--wide m-badge--rounded">Publicado</div>' :
 							'<div class="m-badge m-badge--warning m-badge--wide m-badge--rounded">No publicado</div>';
 						@endphp
-						<tr data-id="{{ $row_id }}" data-title="{{ $row_titulo }}" data-url="/admin/paginas/{{ $row_id }}">
+						<tr data-id="{{ $row_id }}" data-title="{{ $row_titulo }}" data-url="/admin/servicios/{{ $row_id }}">
 							<td>{!! '<span class="m--font-bolder"> '.$row_titulo.'</span>' !!}</td>
-							<td>
-								<a class="copy-button" data-clipboard-text="{!! Request::root().'/'.$row_url !!}" href="#" title="Copiar URL"><i class="la la-copy"></i></a>
-								<span>{{ $row_url }}</span>
-							</td>
 							<td class="text-center">{!! $row_publicar !!}</td>
 							<td class="text-center">
 								<div class="btn-group">
@@ -55,9 +50,7 @@
 										Acciones
 									</button>
 									<div class="dropdown-menu">
-										<a class="dropdown-item" href="{{ route('admin.paginas.editar', $row_id) }}">Editar Página</a>
-										<a class="dropdown-item" href="{{ route('admin.paginas.edit', $row_id) }}">Editar Metadata</a>
-										<a class="dropdown-item" href="{{ route('admin.paginas.items.index', $row_id) }}">Slider</a>
+										<a class="dropdown-item" href="{{ route('admin.servicios.edit', $row_id) }}">Editar</a>
 										<div class="dropdown-divider"></div>
 										<a class="dropdown-item opcion-eliminar" href="#">Eliminar</a>
 									</div>
@@ -80,16 +73,4 @@
 @stop
 
 @section('contenido_footer')
-	{!! Html::script('https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js') !!}
-	<script>
-        var clipboard = new Clipboard('.copy-button');
-        clipboard.on('success', function(e) {
-            alert('El URL se copio a tu portapapeles.');
-            console.log(e);
-        });
-        clipboard.on('error', function(e) {
-            alert('Se produjo un error.');
-            console.log(e);
-        });
-	</script>
 @stop

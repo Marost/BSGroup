@@ -21,5 +21,8 @@ Route::group(['as' => 'blog.', 'prefix' => 'blog'], function () {
     Route::get('tag/{url}', ['as' => 'tag', 'uses' => 'FrontendController@blogTag']);
 });
 
+//SERVICIOS
+Route::get('servicio/{servicio}', ['as' => 'servicio', 'uses' => 'FrontendController@servicio']);
+
 //PAGINA
 Route::any('{pagina?}', ['as' => 'pagina', 'uses' => 'FrontendController@pagina'])->where('pagina', '(.*)');

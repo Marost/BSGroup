@@ -5,6 +5,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class BlogCategoria extends BaseEntity {
 
     use SoftDeletes;
+    protected $appends = ['url'];
     protected $dates = ['deleted_at'];
 	protected $fillable = ['titulo','slug_url','descripcion','publicar','imagen','imagen_carpeta'];
     protected $table = 'blog_categorias';

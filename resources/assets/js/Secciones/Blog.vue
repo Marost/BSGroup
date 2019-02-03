@@ -8,7 +8,9 @@
 				<div class="col-lg-4 col-md-6 news-block-two" v-for="row in rows">
 					<div class="inner-box hvr-float-shadow">
 						<div class="lower-content">
-							<div class="category"><a href="#">{{ row.categoria.titulo }}</a></div>
+							<div class="category">
+								<a :href="row.categoria.url">{{ row.categoria.titulo }}</a>
+							</div>
 							<h4><a :href="row.url">{{ row.titulo }}</a></h4>
 							<div class="text">{{ row.descripcion }}</div>
 							<div class="link-btn">
@@ -26,25 +28,25 @@
 	import axios from 'axios'
 	
     export default {
-       data: function () {
-	       return {
-	           loading: false,
+		data: function () {
+		   return {
+		       loading: false,
 		       rows: []
-	       }
-       },
-	    mounted() {
-           this.cargar();
-	    },
-	    methods: {
+		   }
+		},
+		mounted() {
+		    this.cargar();
+		},
+		methods: {
 		    cargar: function () {
 			    this.loading = true;
 			    axios.get("/widget/noticias").then(response => {
-			        this.rows = response.data;
+			        this.rows = response.data.data;
 			        this.loading = false;
 			    }).catch(error =>{
 			        this.loading = false;
 			    });
-            }
-        }
+		    }
+		}
     }
 </script>

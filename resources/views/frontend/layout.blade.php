@@ -18,12 +18,13 @@
 	<link rel="icon" sizes="96x96" href="{{ asset('favicon.png') }}">
 
 	{{-- Enlace externos --}}
+	{!! Html::style('https://s3.amazonaws.com/icomoon.io/114779/Socicon/style.css?9ukd8d') !!}
+
+
+	{{-- Enlaces Internos --}}
 	<link href="/css/bootstrap.css" rel="stylesheet">
 	<link href="/css/style.css" rel="stylesheet">
 	<link href="/css/responsive.css" rel="stylesheet">
-
-	{{-- Enlaces Internos --}}
-	
 
 	@yield('contenido_header')
 
@@ -114,8 +115,9 @@
 										<li><a href="#">Inicio</a></li>
 										<li><a href="#nosotros">Nosotros</a></li>
 										<li><a href="#servicios">Servicios</a></li>
-										<li><a href="blog.html">Blog</a></li>
+										<li><a href="#servicios">Clientes</a></li>
 										<li><a href="#contacto">Contacto</a></li>
+										<li><a href="blog.html">Blog</a></li>
 									</ul>
 								</div>
 							</nav>
@@ -144,8 +146,9 @@
 									<li><a href="#">Inicio</a></li>
 									<li><a href="#nosotros">Nosotros</a></li>
 									<li><a href="#servicios">Servicios</a></li>
-									<li><a href="blog.html">Blog</a></li>
+									<li><a href="#contacto">Clientes</a></li>
 									<li><a href="#contacto">Contacto</a></li>
+									<li><a href="blog.html">Blog</a></li>
 								</ul>
 							</div>
 						</nav><!-- Main Menu End-->

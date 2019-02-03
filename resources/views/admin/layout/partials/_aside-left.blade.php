@@ -33,6 +33,19 @@
 			</li>
 			{{-- FIN PAGINAS --}}
 
+			{{-- SERVICIOS --}}
+			<li class="m-menu__item {!! Request::is('*servicios*') ? 'm-menu__item--active' : '' !!}" aria-haspopup="true">
+				<a href="{{ route('admin.servicios.index') }}" class="m-menu__link">
+					<i class="m-menu__link-icon flaticon-layers"></i>
+					<span class="m-menu__link-title">
+						<span class="m-menu__link-wrap">
+							<span class="m-menu__link-text">Servicios</span>
+						</span>
+					</span>
+				</a>
+			</li>
+			{{-- FIN SERVICIOS --}}
+
 			{{-- CLIENTES --}}
 			<li class="m-menu__item {!! Request::is('*clientes*') ? 'm-menu__item--active' : '' !!}" aria-haspopup="true">
 				<a href="{{ route('admin.configuracion.url.items.index', 'clientes') }}" class="m-menu__link">
@@ -45,32 +58,6 @@
 				</a>
 			</li>
 			{{-- FIN CLIENTES --}}
-
-			{{-- MARCAS --}}
-			<li class="m-menu__item {!! Request::is('*marcas*') ? 'm-menu__item--active' : '' !!}" aria-haspopup="true">
-				<a href="{{ route('admin.configuracion.url.items.index', 'marcas') }}" class="m-menu__link">
-					<i class="m-menu__link-icon flaticon-apps"></i>
-					<span class="m-menu__link-title">
-						<span class="m-menu__link-wrap">
-							<span class="m-menu__link-text">Marcas</span>
-						</span>
-					</span>
-				</a>
-			</li>
-			{{-- FIN MARCAS --}}
-
-			{{-- TESTIMONIOS --}}
-			<li class="m-menu__item {!! Request::is('*testimonios*') ? 'm-menu__item--active' : '' !!}" aria-haspopup="true">
-				<a href="{{ route('admin.configuracion.url.items.index', 'testimonios') }}" class="m-menu__link">
-					<i class="m-menu__link-icon flaticon-user"></i>
-					<span class="m-menu__link-title">
-						<span class="m-menu__link-wrap">
-							<span class="m-menu__link-text">Testimonios</span>
-						</span>
-					</span>
-				</a>
-			</li>
-			{{-- FIN TESTIMONIOS --}}
 
 			{{-- BLOG --}}
 			<li class="m-menu__item m-menu__item--submenu {!! Request::is('*blog*') ? 'm-menu__item--open m-menu__item--expanded' : '' !!}" aria-haspopup="true" data-menu-submenu-toggle="hover">

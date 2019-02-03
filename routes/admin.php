@@ -13,6 +13,9 @@ Route::post('paginas-save/{id}', 'PaginasController@save');
 Route::resource('paginas.items', 'PaginasItemsController');
 Route::get('paginas-items-ordenar/{url}', ['as' => 'paginas.items.order.get', 'uses' => 'PaginasItemsController@order']);
 
+//SERVICIOS
+Route::resource('servicios', 'ServiciosController');
+
 //BLOG
 Route::group(['as' => 'blog.', 'prefix' => 'blog'], function () {
     //NOTICIAS
