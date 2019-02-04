@@ -1883,6 +1883,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 
 
@@ -1970,7 +1972,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n.service-block-six .inner-box .icon-box[data-v-298aff50]{\n\tmargin: 0 auto 10px;\n}\n", ""]);
 
 // exports
 
@@ -2706,12 +2708,14 @@ var render = function() {
     _vm._l(_vm.rows, function(row) {
       return _c("div", { staticClass: "service-block-six" }, [
         _c("div", { staticClass: "inner-box hvr-bounce-to-bottom" }, [
-          _vm._m(0, true),
+          _c("div", { staticClass: "icon-box" }, [
+            _c("a", { attrs: { href: row.url } }, [
+              _c("img", { attrs: { src: row.imagen_home, alt: row.titulo } })
+            ])
+          ]),
           _vm._v(" "),
           _c("h4", [
-            _c("a", { attrs: { href: "row.url" } }, [
-              _vm._v(_vm._s(row.titulo))
-            ])
+            _c("a", { attrs: { href: row.url } }, [_vm._v(_vm._s(row.titulo))])
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "text" }, [_vm._v(_vm._s(row.descripcion))])
@@ -2721,16 +2725,7 @@ var render = function() {
     0
   )
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "icon-box" }, [
-      _c("span", { staticClass: "flaticon-graphic" })
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {

@@ -1,40 +1,6 @@
-
-/* Bremond - HTML Template */
-
-/************ TABLE OF CONTENTS ***************
-1. Fonts
-2. Main Slider
-3. What We Do
-4. Our Experience
-5. Why Choose Us
-6. Testimonial
-7. Feature Case
-8. Client logo
-9. Our Team
-10. Funfact&form
-11. Latest News
-12. Google Map
-13. Page Title
-14. History
-15. Footer
-
-
-**********************************************/
-
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Work+Sans:400,500,700');
-/*font-family: 'Montserrat', sans-serif;
-font-family: 'Work Sans', sans-serif;*/
-
-@import url('font-awesome.css');
 @import url('flaticon.css');
-@import url('bootstrap.css');
 @import url('jquery.fancybox.min.css');
-@import url('animate.css');
-@import url('hover.css');
-@import url('owl.css');
 @import url('custom-animate.css');
-
-
 
 /*** 
 
@@ -294,7 +260,7 @@ img {
 	background-color: #ffffff;
 	background-position: center center;
 	background-repeat: no-repeat;
-	background-image: url(../images/icons/preloader.svg);
+	background-image: url(/images/icons/preloader.svg);
 }
 
 /*** Scroll To Top style ***/
@@ -812,7 +778,7 @@ img {
 	top: 0px;
 	width: 45px;
 	height: 45px;
-	background: url(../images/icons/icon-cross.png) center center no-repeat;
+	background: url(/images/icons/icon-cross.png) center center no-repeat;
 	background-color: rgba(17, 17, 17, 0.50) !important;
 }
 
@@ -5662,7 +5628,7 @@ element css
 	top: 0;
 	bottom: 0;
 	right: 0;
-	background: url(../images/resource/shape-one.jpg);
+	background: url(/images/resource/shape-one.jpg);
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -5916,7 +5882,7 @@ element css
 	content: '';
 	width: 100%;
 	height: 100%;
-	background: url(../images/resource/map2.png) no-repeat center;
+	background: url(/images/resource/map2.png) no-repeat center;
 	left: 0;
 	bottom: 0;
 }
@@ -6234,7 +6200,7 @@ element css
 	content: '';
 	width: 100%;
 	top: 0;
-	background: url(../images/resource/shape-two.png) no-repeat center;
+	background: url(/images/resource/shape-two.png) no-repeat center;
 	left: 0;
 	bottom: -120px;
 }
@@ -6478,7 +6444,7 @@ element css
 	content: '';
 	width: 100%;
 	height: 100%;
-	background: url(../images/resource/map2.png) no-repeat center;
+	background: url(/images/resource/map2.png) no-repeat center;
 	left: 0;
 	bottom: 0;
 }
@@ -6612,7 +6578,7 @@ element css
 	content: '';
 	width: 100%;
 	height: 100%;
-	background: url(../images/resource/map2.png) no-repeat center;
+	background: url(/images/resource/map2.png) no-repeat center;
 	left: 0;
 	bottom: 0;
 }
@@ -6719,16 +6685,8 @@ element css
 
 .service-block-six .inner-box .icon-box {
 	position: relative;
-	color: #0C3C60;
-	margin: 0 auto;
-	font-size: 48px;
-	background-repeat: no-repeat;
-	background-position: center;
-	width: 80px;
-	height: 80px;
+	margin: 0 auto 10px;
 	text-align: center;
-	line-height: 80px;
-	border-radius: 50%;
 	-webkit-transition: .5s ease;
 	-o-transition: .5s ease;
 	transition: .5s ease;
@@ -7027,7 +6985,7 @@ element css
 .image-block-one:before {
 	position: absolute;
 	content: '';
-	background: url(../images/resource/shape-three.png) no-repeat center;
+	background: url(/images/resource/shape-three.png) no-repeat center;
 	width: 50px;
 	height: 150px;
 	left: -48px;
@@ -7049,7 +7007,7 @@ element css
 .testimonial:before {
 	position: absolute;
 	content: '';
-	background: url(../images/background/2.jpg) center no-repeat fixed;
+	background: url(/images/background/2.jpg) center no-repeat fixed;
 	background-size: cover;
 	top: 0;
 	left: 0;
@@ -9609,7 +9567,7 @@ element css
 	left: 0px;
 	width: 100%;
 	height: 100%;
-	background: url(../images/resource/map3.png) no-repeat center;
+	background: url(/images/resource/map3.png) no-repeat center;
 	opacity: 0.4;
 }
 
@@ -9735,7 +9693,7 @@ element css
 	content: '';
 	width: 100%;
 	height: 100%;
-	background: url(../images/resource/map.png) no-repeat left center;
+	background: url(/images/resource/map.png) no-repeat left center;
 	left: 0;
 	bottom: 0;
 }

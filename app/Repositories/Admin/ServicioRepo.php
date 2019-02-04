@@ -10,9 +10,13 @@ class ServicioRepo extends BaseRepo{
         return new Servicio();
     }
 
-    //PAGINAS NOTICIAS EN HOME
     public function listaRegistros()
     {
         return $this->getModel()->where('publicar', 1)->get();
+    }
+
+    public function listaRegistrosAdmin(Request $request)
+    {
+        return $this->getModel()->where('publicar', 1)->paginate();
     }
 }

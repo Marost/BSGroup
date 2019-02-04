@@ -4,9 +4,11 @@
 		<div class="service-block-six" v-for="row in rows">
 			<div class="inner-box hvr-bounce-to-bottom">
 				<div class="icon-box">
-					<span class="flaticon-graphic"></span>
+					<a :href="row.url">
+						<img :src="row.imagen_home" :alt="row.titulo">
+					</a>
 				</div>
-				<h4><a href="row.url">{{ row.titulo }}</a></h4>
+				<h4><a :href="row.url">{{ row.titulo }}</a></h4>
 				<div class="text">{{ row.descripcion }}</div>
 			</div>
 		</div>
@@ -78,5 +80,7 @@
 </script>
 
 <style scoped>
-
+	.service-block-six .inner-box .icon-box{
+		margin: 0 auto 10px;
+	}
 </style>

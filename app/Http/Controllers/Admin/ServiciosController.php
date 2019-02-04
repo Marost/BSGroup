@@ -34,7 +34,7 @@ class ServiciosController extends Controller
      */
     public function index(Request $request)
     {
-        $rows = $this->servicioRepo->findAndPaginate();
+        $rows = $this->servicioRepo->listaRegistrosAdmin($request);
 
         return view('admin.servicios.list', compact('rows'));
     }

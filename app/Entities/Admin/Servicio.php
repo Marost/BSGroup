@@ -5,6 +5,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Servicio extends BaseEntity {
 
     use SoftDeletes;
+    protected $appends = ['imagen_home','url'];
     protected $dates = ['deleted_at'];
     protected $fillable = ['titulo','slug_url','descripcion','contenido','imagen','imagen_carpeta','publicar'];
     protected $table = 'servicios';
@@ -35,7 +36,7 @@ class Servicio extends BaseEntity {
 
     public function getImagenHomeAttribute()
     {
-        return "/upload/".$this->imagen_carpeta."370x250/".$this->imagen;
+        return "/upload/".$this->imagen_carpeta."400x200/".$this->imagen;
     }
 
     public function getImagenOriginalAttribute()

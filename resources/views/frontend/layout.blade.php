@@ -18,11 +18,16 @@
 	<link rel="icon" sizes="96x96" href="{{ asset('favicon.png') }}">
 
 	{{-- Enlace externos --}}
+	{!! Html::style('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700') !!}
+	{!! Html::style('https://fonts.googleapis.com/css?family=Work+Sans:400,500,700') !!}
+	{!! Html::style('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.1/css/font-awesome.min.css') !!}
+	{!! Html::style('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css') !!}
+	{!! Html::style('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css') !!}
+	{!! Html::style('https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.0.2/css/hover-min.css') !!}
+	{!! Html::style('https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/assets/owl.carousel.min.css') !!}
 	{!! Html::style('https://s3.amazonaws.com/icomoon.io/114779/Socicon/style.css?9ukd8d') !!}
 
-
 	{{-- Enlaces Internos --}}
-	<link href="/css/bootstrap.css" rel="stylesheet">
 	<link href="/css/style.css" rel="stylesheet">
 	<link href="/css/responsive.css" rel="stylesheet">
 
@@ -249,17 +254,15 @@
 
 
 {{-- Enlaces Externos --}}
-<script src="/js/jquery.js"></script>
+{!! Html::script('https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js') !!}
+{!! Html::script('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js') !!}
 <script src="/js/popover.js"></script>
-<script src="/js/bootstrap.min.js"></script>
-
-<script src="/js/wow.js"></script>
-<script src="/js/owl.js"></script>
-<script src="/js/validate.js"></script>
-<script src="/js/mixitup.js"></script>
-<script src="/js/isotope.js"></script>
-<script src="/js/appear.js"></script>
-<script src="/js/jquery.fancybox.js"></script>
+{!! Html::script('https://cdnjs.cloudflare.com/ajax/libs/wow/1.0.1/wow.min.js') !!}
+{!! Html::script('https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/owl.carousel.min.js') !!}
+{!! Html::script('https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.10/jquery.mixitup.min.js') !!}
+{!! Html::script('https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js') !!}
+{!! Html::script('https://cdnjs.cloudflare.com/ajax/libs/jquery-appear/0.1/jquery.appear.min.js') !!}
+{!! Html::script('https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.1/jquery.fancybox.min.js') !!}
 
 <!-- Custom script -->
 <script src="/js/script.js"></script>
