@@ -3717,7 +3717,7 @@ element css
 .header-top .links-nav li .fa {
 	padding-right: 8px;
 	font-size: 16px;
-	color: #0C3C60;
+	color: #A68845;
 }
 
 .header-top .link-btn,
@@ -5247,7 +5247,7 @@ element css
 	padding: 50px;
 }
 
-.main-slider2 h1 {
+.main-slider2 h3 {
 	position: relative;
 	color: #fff;
 	font-size: 60px;
@@ -7439,18 +7439,8 @@ element css
 
 .feature-case-two .inner-box .icon-box {
 	position: relative;
-	width: 80px;
-	height: 80px;
-	color: #0C3C60;
-	font-size: 40px;
 	line-height: 80px;
-	text-align: center;
-	background-color: #fcf2f3;
-	margin-bottom: 25px;
-}
-
-.feature-case-two .inner-box .icon-box span {
-	display: block;
+	margin-bottom: 5px;
 }
 
 .feature-case-two .inner-box h4 {
@@ -9418,7 +9408,7 @@ element css
 }
 
 .page-title .bread-crumb li a {
-	color: #0C3C60;
+	color: #AD9054;
 	transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
 	-webkit-transition: all 0.3s ease;
@@ -9427,7 +9417,7 @@ element css
 }
 
 .page-title .bread-crumb li a:hover {
-	color: #fa2964;
+	color: #AD9054;
 }
 
 /*** 
@@ -9803,7 +9793,7 @@ element css
 }
 
 .main-footer .services-widget .list li a:hover {
-	color: #0C3C60;
+	color: #AD9054;
 }
 
 .main-footer .services-widget .list li:last-child {

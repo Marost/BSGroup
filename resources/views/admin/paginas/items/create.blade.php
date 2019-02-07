@@ -30,21 +30,6 @@
 						<label>Titulo</label>
 						{!! Form::text('titulo', null, ['class' => 'form-control m-input']) !!}
 					</div>
-
-					<div class="form-group m-form__group">
-						<label>Subtitulo</label>
-						{!! Form::text('subtitulo', null, ['class' => 'form-control m-input']) !!}
-					</div>
-
-					<div class="form-group m-form__group">
-						<label>Boton - Nombre</label>
-						{!! Form::text('boton', null, ['class' => 'form-control m-input']) !!}
-					</div>
-
-					<div class="form-group m-form__group">
-						<label>Boton - Enlace</label>
-						{!! Form::text('boton_enlace', null, ['class' => 'form-control m-input']) !!}
-					</div>
 				</div>
 			</div>
 			<!--end::Form-->

@@ -9,6 +9,7 @@ use App\Repositories\Admin\BlogNoticiaRepo;
 use App\Repositories\Admin\BlogTagRepo;
 use App\Repositories\Admin\ConfiguracionRepo;
 use App\Repositories\Admin\PaginaRepo;
+use App\Repositories\Admin\ServicioRepo;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
@@ -18,10 +19,8 @@ class FrontendController extends Controller
     protected $categoriaRepo;
     protected $tagRepo;
     protected $paginaRepo;
-    /**
-     * @var ConfiguracionRepo
-     */
-    private $configuracionRepo;
+    protected $configuracionRepo;
+    protected $servicioRepo;
 
     /**
      * FrontendController constructor.
@@ -29,12 +28,14 @@ class FrontendController extends Controller
      * @param BlogCategoriaRepo $categoriaRepo
      * @param BlogTagRepo $tagRepo
      * @param PaginaRepo $paginaRepo
+     * @param ServicioRepo $servicioRepo
      * @param ConfiguracionRepo $configuracionRepo
      */
     public function __construct(BlogNoticiaRepo $noticiaRepo,
                                 BlogCategoriaRepo $categoriaRepo,
                                 BlogTagRepo $tagRepo,
                                 PaginaRepo $paginaRepo,
+                                ServicioRepo $servicioRepo,
                                 ConfiguracionRepo $configuracionRepo)
     {
         $this->noticiaRepo = $noticiaRepo;
@@ -42,6 +43,14 @@ class FrontendController extends Controller
         $this->tagRepo = $tagRepo;
         $this->paginaRepo = $paginaRepo;
         $this->configuracionRepo = $configuracionRepo;
+        $this->servicioRepo = $servicioRepo;
+    }
+
+    public function servicio($servicio)
+    {
+        $row = $this->servicioRepo->findUrl($servicio);
+
+        return view('frontend.pagina-servicio', compact('row'));
     }
 
     public function pagina($pagina = '/')

@@ -73,11 +73,8 @@ class PaginasItemsController extends Controller {
         $post->etiqueta = 'Titulo';
         $post->valor = $request->input('titulo');
         $post->contenido = json_encode([
-            'subtitulo' => $request->input('subtitulo'),
             'imagen' => $request->input('imagen'),
-            'imagen_carpeta' => $request->input('imagen_carpeta'),
-            'boton' => $request->input('boton'),
-            'boton_enlace' => $request->input('boton_enlace')
+            'imagen_carpeta' => $request->input('imagen_carpeta')
         ]);
         $post->orden = 0;
         $post->save();
@@ -112,11 +109,8 @@ class PaginasItemsController extends Controller {
         $post = $this->configuracionRepo->findOrFail($id);
         $post->valor = $request->input('titulo');
         $post->contenido = json_encode([
-            'subtitulo' => $request->input('subtitulo'),
             'imagen' => $request->input('imagen'),
-            'imagen_carpeta' => $request->input('imagen_carpeta'),
-            'boton' => $request->input('boton'),
-            'boton_enlace' => $request->input('boton_enlace')
+            'imagen_carpeta' => $request->input('imagen_carpeta')
         ]);
         $post->fill($request->all());
         $post->save();

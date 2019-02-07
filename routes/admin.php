@@ -11,7 +11,8 @@ Route::post('paginas-save/{id}', 'PaginasController@save');
 
 //PAGINAS - ITEMS
 Route::resource('paginas.items', 'PaginasItemsController');
-Route::get('paginas-items-ordenar/{url}', ['as' => 'paginas.items.order.get', 'uses' => 'PaginasItemsController@order']);
+Route::get('paginas-items-ordenar/{pagina}', ['as' => 'paginas.items.order.get', 'uses' => 'PaginasItemsController@order']);
+Route::post('paginas-items-ordenar/{pagina}', ['as' => 'paginas.items.order.update', 'uses' => 'PaginasItemsController@orderUpdate']);
 
 //SERVICIOS
 Route::resource('servicios', 'ServiciosController');

@@ -98,7 +98,7 @@
 				<div class="container clearfix">
 
 					<div class="float-left logo-outer">
-						<div class="logo"><a href="/"><img src="images/logo.png" alt="" title=""></a></div>
+						<div class="logo"><a href="/"><img src="/images/logo.png" alt="" title=""></a></div>
 					</div>
 
 					<div class="float-right upper-right clearfix">
@@ -117,11 +117,11 @@
 
 								<div class="navbar-collapse collapse clearfix">
 									<ul class="navigation clearfix">
-										<li><a href="#">Inicio</a></li>
-										<li><a href="#nosotros">Nosotros</a></li>
-										<li><a href="#servicios">Servicios</a></li>
-										<li><a href="#servicios">Clientes</a></li>
-										<li><a href="#contacto">Contacto</a></li>
+										<li><a href="/">Inicio</a></li>
+										<li><a href="/#nosotros">Nosotros</a></li>
+										<li><a href="/#servicios">Servicios</a></li>
+										<li><a href="/#clientes">Clientes</a></li>
+										<li><a href="/#contacto">Contacto</a></li>
 										<li><a href="blog.html">Blog</a></li>
 									</ul>
 								</div>
@@ -139,7 +139,7 @@
 				<div class="container clearfix">
 					<!--Logo-->
 					<div class="logo float-left">
-						<a href="/" class="img-responsive"><img src="images/logo.png" alt="" title=""></a>
+						<a href="/" class="img-responsive"><img src="/images/logo.png" alt="" title=""></a>
 					</div>
 
 					<!--Right Col-->
@@ -148,11 +148,11 @@
 						<nav class="main-menu navbar-expand-lg">
 							<div class="navbar-collapse collapse clearfix">
 								<ul class="navigation clearfix">
-									<li><a href="#">Inicio</a></li>
-									<li><a href="#nosotros">Nosotros</a></li>
-									<li><a href="#servicios">Servicios</a></li>
-									<li><a href="#contacto">Clientes</a></li>
-									<li><a href="#contacto">Contacto</a></li>
+									<li><a href="/">Inicio</a></li>
+									<li><a href="/#nosotros">Nosotros</a></li>
+									<li><a href="/#servicios">Servicios</a></li>
+									<li><a href="/#clientes">Clientes</a></li>
+									<li><a href="/#contacto">Contacto</a></li>
 									<li><a href="blog.html">Blog</a></li>
 								</ul>
 							</div>
@@ -173,15 +173,15 @@
 				<div class="widgets-section">
 					<div class="row clearfix">
 						<!--Big Column-->
-						<div class="big-column col-lg-8">
+						<div class="big-column col-lg-7">
 							<div class="row clearfix">
 
 								<!--Footer Column-->
-								<div class="footer-column col-lg-7 col-md-7">
+								<div class="footer-column col-lg-8 col-md-8">
 									<div class="footer-widget about-widget">
 										<div class="footer-logo">
 											<figure>
-												<a href="/"><img src="images/footer-logo.png" alt=""></a>
+												<a href="/"><img src="/images/footer-logo.png" alt=""></a>
 											</figure>
 										</div>
 										<div class="widget-content">
@@ -196,16 +196,15 @@
 								</div>
 
 								<!--Footer Column-->
-								<div class="footer-column col-lg-5 col-md-5">
+								<div class="footer-column col-lg-4 col-md-4">
 									<div class="footer-widget services-widget">
 										<h2 class="widget-title">Opciones</h2>
 										<div class="widget-content">
 											<ul class="list">
-												<li><a href="#">Inicio</a></li>
-												<li><a href="#">Nosotros</a></li>
-												<li><a href="#">Servicios</a></li>
-												<li><a href="#">Blog</a></li>
-												<li><a href="#">Contacto</a></li>
+												<li><a href="/#nosotros">Nosotros</a></li>
+												<li><a href="/#servicios">Servicios</a></li>
+                                                <li><a href="/#clientes">Clientes</a></li>
+                                                <li><a href="/#contacto">Contacto</a></li>
 											</ul>
 										</div>
 									</div>
@@ -214,11 +213,11 @@
 						</div>
 
 						<!--Big Column-->
-						<div class="big-column col-lg-4">
+						<div class="big-column col-lg-5">
 							<div class="row clearfix">
 
 								<!--Footer Column-->
-								<div class="footer-column col-lg-9 col-md-9">
+								<div class="footer-column col-lg-10 col-md-10">
 									<div class="footer-widget services-widget">
 										<h2 class="widget-title">Servicios</h2>
 										<div class="widget-content">

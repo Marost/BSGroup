@@ -1,7 +1,7 @@
 @extends('admin.layout.index')
 
 @section('contenido_titulo')
-	{{ ucfirst($url) }}
+	Slider
 @stop
 
 @section('contenido_header')
@@ -29,7 +29,7 @@
 		</div>
 		<div class="m-portlet__body">
 			<!--begin::Section-->
-			{!! Form::open(['route' => ['admin.configuracion.url.items.order.update', $url], 'method' => 'POST', 'id' => 'FormOrder']) !!}
+			{!! Form::open(['route' => ['admin.paginas.items.order.update', $pagina], 'method' => 'POST', 'id' => 'FormOrder']) !!}
 				<ul id="sortable" class="m-accordion m-accordion--default m-accordion--solid">
 					@foreach($rows as $item)
 						@php
