@@ -79,19 +79,16 @@
     <section class="project-details sp-four">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-6">
                     <div class="image mb-30">
                         <img src="{{ $row_imagen_original }}" alt="{{ $row_titulo }}">
                     </div>
                 </div>
-            </div>
-            <div class="content">
-                <div class="row">
-                    <div class="col-lg-8 offset-lg-2">
+                <div class="col-lg-6">
+                    <div class="content">
                         {!! $row_contenido !!}
                     </div>
                 </div>
-                        
             </div>
         </div>
     </section>

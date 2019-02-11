@@ -48,7 +48,7 @@
 
 			{{-- CLIENTES --}}
 			<li class="m-menu__item {!! Request::is('*clientes*') ? 'm-menu__item--active' : '' !!}" aria-haspopup="true">
-				<a href="{{ route('admin.configuracion.url.items.index', 'clientes') }}" class="m-menu__link">
+				<a href="{{ route('admin.clientes.img.list') }}" class="m-menu__link">
 					<i class="m-menu__link-icon flaticon-tea-cup"></i>
 					<span class="m-menu__link-title">
 						<span class="m-menu__link-wrap">
@@ -162,13 +162,6 @@
 							<a href="{{ route('admin.configuracion.url.items.index', 'redes-sociales') }}" class="m-menu__link">
 								<i class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i>
 								<span class="m-menu__link-text">Redes sociales</span>
-							</a>
-						</li>
-
-						<li class="m-menu__item {!! Request::is('*menu*') ? 'm-menu__item--active' : '' !!}" aria-haspopup="true">
-							<a href="{{ route('admin.configuracion.menu.index') }}" class="m-menu__link">
-								<i class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i>
-								<span class="m-menu__link-text">Menú</span>
 							</a>
 						</li>
 

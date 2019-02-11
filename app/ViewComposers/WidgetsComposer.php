@@ -1,23 +1,42 @@
 <?php namespace App\ViewComposers;
 
 use App\Entities\Admin\BlogNoticia;
+use App\Repositories\Admin\BlogCategoriaRepo;
+use App\Repositories\Admin\BlogNoticiaRepo;
+use App\Repositories\Admin\BlogTagRepo;
 use App\Repositories\Admin\ConfiguracionRepo;
 use Illuminate\Contracts\View\View;
 
 class WidgetsComposer
 {
     protected $configuracionRepo;
+    protected $tagRepo;
+    protected $categoriaRepo;
+    protected $noticiaRepo;
 
-    public function __construct(ConfiguracionRepo $configuracionRepo)
+    /**
+     * WidgetsComposer constructor.
+     * @param ConfiguracionRepo $configuracionRepo
+     * @param BlogNoticiaRepo $noticiaRepo
+     * @param BlogCategoriaRepo $categoriaRepo
+     * @param BlogTagRepo $tagRepo
+     */
+    public function __construct(ConfiguracionRepo $configuracionRepo,
+                                BlogNoticiaRepo $noticiaRepo,
+                                BlogCategoriaRepo $categoriaRepo,
+                                BlogTagRepo $tagRepo)
     {
         $this->configuracionRepo = $configuracionRepo;
+        $this->noticiaRepo = $noticiaRepo;
+        $this->categoriaRepo = $categoriaRepo;
+        $this->tagRepo = $tagRepo;
     }
 
     public function compose(View $view)
     {
-        $view->w_home = $this->configuracionRepo->listaHome();
-        $view->w_empresas = $this->configuracionRepo->listaItems('empresas');
-        $view->w_noticias = BlogNoticia::where('published_at','<=',fechaActual())->where('publicar','1')->orderBy('published_at','desc')->paginate(2);
+        $view->w_tags = $this->tagRepo->paginate(10);
+        $view->w_categorias = $this->categoriaRepo->all();
+        $view->w_noticias_recientes = $this->noticiaRepo->listaNoticiasRecientes();
     }
     
 }

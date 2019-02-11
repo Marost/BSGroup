@@ -74,7 +74,7 @@
 						<div class="image"><img src="images/main-slider/image-1.jpg" alt=""></div>
 						<div class="slider-caption text-center">
 							<div class="container">
-								<h1>Gestión Estratégica</h1>
+								<h2>Gestión Estratégica</h2>
 								<div class="link-btn">
 									<a href="#servicios" class="theme-btn btn-style-one">Nuestros servicios</a>
 									<a href="#contacto" class="theme-btn btn-style-seven">Contacto</a>

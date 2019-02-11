@@ -17,6 +17,15 @@ Route::post('paginas-items-ordenar/{pagina}', ['as' => 'paginas.items.order.upda
 //SERVICIOS
 Route::resource('servicios', 'ServiciosController');
 
+//Clientes
+Route::group(['as' => 'clientes.', 'prefix' => 'clientes'], function(){
+    Route::get('/', ['as' => 'img.list', 'uses' => 'ClientesController@fotosList' ]);
+    Route::post('order', ['as' => 'img.order', 'uses' => 'ClientesController@fotosOrder' ]);
+    Route::get('upload', ['as' => 'img.create', 'uses' => 'ClientesController@fotosCreate' ]);
+    Route::post('upload', ['as' => 'img.store', 'uses' => 'ClientesController@fotosStore' ]);
+    Route::delete('delete/{id}', ['as' => 'img.delete', 'uses' => 'ClientesController@fotosDelete' ]);
+});
+
 //BLOG
 Route::group(['as' => 'blog.', 'prefix' => 'blog'], function () {
     //NOTICIAS

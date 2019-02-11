@@ -17,17 +17,16 @@ class BlogNoticiaRepo extends BaseRepo{
                                 ->where('publicar', 1)
                                 ->where('visibilidad', 1)
                                 ->orderBy('published_at', 'desc')
-                                ->paginate();
+                                ->paginate(6);
     }
 
     //LISTA NOTICIAS RECIENTES
-    public function listaNoticiasRecientes($id, $paginate)
+    public function listaNoticiasRecientes()
     {
-        return $this->getModel()->where('id','<>',$id)
-                                ->where('published_at','<=',fechaActual())
+        return $this->getModel()->where('published_at','<=',fechaActual())
                                 ->where('publicar','1')
                                 ->orderBy('published_at','desc')
-                                ->paginate($paginate);
+                                ->paginate(4);
     }
 
     //LISTA NOTICIAS RELACIONADAS

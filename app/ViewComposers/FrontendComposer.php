@@ -2,10 +2,24 @@
 
 use App\Entities\Admin\Configuracion;
 use App\Entities\Admin\Menu;
+use App\Repositories\Admin\ServicioRepo;
 use Illuminate\Contracts\View\View;
 
 class FrontendComposer
 {
+    /**
+     * @var ServicioRepo
+     */
+    protected $servicioRepo;
+
+    /**
+     * FrontendComposer constructor.
+     * @param ServicioRepo $servicioRepo
+     */
+    public function __construct(ServicioRepo $servicioRepo)
+    {
+        $this->servicioRepo = $servicioRepo;
+    }
 
     public function compose(View $view)
     {
@@ -21,11 +35,13 @@ class FrontendComposer
 
         $view->conf_footer = Configuracion::where('tipo','footer')->where('nombre','texto')->first()->valor;
 
-        $view->conf_web_direccion = Configuracion::where('tipo','web')->where('nombre','direccion')->first();
-        $view->conf_web_telefono = Configuracion::where('tipo','web')->where('nombre','telefono')->first();
-        $view->conf_web_email = Configuracion::where('tipo','web')->where('nombre','email')->first();
+        $view->conf_web_direccion = Configuracion::where('tipo','web')->where('nombre','direccion')->first()->valor;
+        $view->conf_web_telefono = Configuracion::where('tipo','web')->where('nombre','telefono')->first()->valor;
+        $view->conf_web_email = Configuracion::where('tipo','web')->where('nombre','email')->first()->valor;
 
         $view->conf_script = Configuracion::where('tipo','script')->first()->valor;
+
+        $view->conf_servicios = $this->servicioRepo->listaRegistros();
     }
 
 }

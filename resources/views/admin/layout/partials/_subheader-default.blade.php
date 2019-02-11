@@ -120,6 +120,16 @@
 					<span><i class="la la-plus-circle"></i><span>Nuevo registro</span></span>
 				</a>
 			@endif
+
+			@if(Request::is('*clientes*'))
+				<a href="{{ route('admin.clientes.img.list') }}" class="btn btn-info m-btn m-btn--icon m-btn--outline-2x">
+					<span><i class="la la-list"></i><span>Lista de clientes</span></span>
+				</a>
+
+				<a href="{{ route('admin.clientes.img.create') }}" class="btn btn-info m-btn m-btn--icon m-btn--outline-2x">
+					<span><i class="la la-plus-circle"></i><span>Nuevos clientes</span></span>
+				</a>
+			@endif
 		</div>
 	</div>
 </div>

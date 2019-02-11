@@ -2,6 +2,7 @@
 
 class Configuracion extends BaseEntity {
 
+
     protected $fillable = ['tipo','nombre','etiqueta','valor','contenido','orden'];
     protected $table = 'configuracion';
 

@@ -41,15 +41,15 @@
 			"name": "{{ $conf_web_titulo }}",
 			"url": "{{ $conf_web_dominio }}",
 			"logo": "{{ asset($conf_web_logo) }}",
-			"email": "{{ $conf_web_email->valor }}",
+			"email": "{{ $conf_web_email }}",
 			"address": {
 				"@type": "PostalAddress",
-				"streetAddress": "{{ $conf_web_direccion->valor }}"
+				"streetAddress": "{{ $conf_web_direccion }}"
 			},
 			"contactPoint": [
 				{
 					"@type": "ContactPoint",
-					"telephone": "{{ $conf_web_telefono->valor }}",
+					"telephone": "{{ $conf_web_telefono }}",
 					"contactType": "customer support",
 					"areaServed": [ "PE" ]
 				}
@@ -79,8 +79,8 @@
 					<!--Top Left-->
 					<div class="top-left pull-left">
 						<ul class="links-nav clearfix">
-							<li><i class="fa fa-envelope-o"></i>consultas@bsgroup.com.pe</li>
-							<li><i class="fa fa-phone"></i>(51-1) 7156577 | (51-1) 7156578</li>
+							<li><i class="fa fa-envelope-o"></i>{{ $conf_web_email }}</li>
+							<li><i class="fa fa-phone"></i>{{ $conf_web_telefono }}</li>
 						</ul>
 					</div>
 
@@ -120,9 +120,9 @@
 										<li><a href="/">Inicio</a></li>
 										<li><a href="/#nosotros">Nosotros</a></li>
 										<li><a href="/#servicios">Servicios</a></li>
-										<li><a href="/#clientes">Clientes</a></li>
+										<li><a href="/clientes">Clientes</a></li>
 										<li><a href="/#contacto">Contacto</a></li>
-										<li><a href="blog.html">Blog</a></li>
+										<li><a href="/blog">Blog</a></li>
 									</ul>
 								</div>
 							</nav>
@@ -151,9 +151,9 @@
 									<li><a href="/">Inicio</a></li>
 									<li><a href="/#nosotros">Nosotros</a></li>
 									<li><a href="/#servicios">Servicios</a></li>
-									<li><a href="/#clientes">Clientes</a></li>
+									<li><a href="/clientes">Clientes</a></li>
 									<li><a href="/#contacto">Contacto</a></li>
-									<li><a href="blog.html">Blog</a></li>
+									<li><a href="/blog">Blog</a></li>
 								</ul>
 							</div>
 						</nav><!-- Main Menu End-->
@@ -203,7 +203,7 @@
 											<ul class="list">
 												<li><a href="/#nosotros">Nosotros</a></li>
 												<li><a href="/#servicios">Servicios</a></li>
-                                                <li><a href="/#clientes">Clientes</a></li>
+                                                <li><a href="/clientes">Clientes</a></li>
                                                 <li><a href="/#contacto">Contacto</a></li>
 											</ul>
 										</div>
@@ -222,9 +222,9 @@
 										<h2 class="widget-title">Servicios</h2>
 										<div class="widget-content">
 											<ul class="list">
-												<li><a href="#">Gestión Estratégica</a></li>
-												<li><a href="#">Gestion Financiera y Tributaria</a></li>
-												<li><a href="#">Gestión del Talento Humano</a></li>
+												@foreach($conf_servicios as $servicio)
+												<li><a href="{{ $servicio->url }}">{{ $servicio->titulo }}</a></li>
+												@endforeach
 											</ul>
 										</div>
 									</div>

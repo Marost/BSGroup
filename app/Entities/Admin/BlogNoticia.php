@@ -71,7 +71,7 @@ class BlogNoticia extends BaseEntity {
 
     public function getImagenBlogAttribute()
     {
-        return "/upload/".$this->imagen_carpeta."600x220/".$this->imagen;
+        return "/upload/".$this->imagen_carpeta."370x250/".$this->imagen;
     }
 
     public function getImagenNoticiaAttribute()

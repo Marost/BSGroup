@@ -12,7 +12,7 @@ class ServicioRepo extends BaseRepo{
 
     public function listaRegistros()
     {
-        return $this->getModel()->where('publicar', 1)->get();
+        return $this->getModel()->where('publicar', 1)->orderBy('titulo','asc')->get();
     }
 
     public function listaRegistrosAdmin(Request $request)

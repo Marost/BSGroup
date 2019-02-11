@@ -50,115 +50,51 @@
 @stop
 
 @section('contenido_body')
-	<div class="container">
-		<div class="row">
-			{{-- NOTICIA --}}
-			<div class="content col-md-9">
-				<!-- Blog -->
-				<div id="blog" class="single-post">
-					<!-- Post single item-->
-					<div class="post-item">
-						<div class="post-item-wrap">
-							<div class="post-item-description">
-								<h2>{{ $nota_titulo }}</h2>
-								<div class="post-meta">
-									<span class="post-meta-date"><i class="fa fa-calendar-o"></i>{{ $nota_fecha }}</span>
-
-									@if($row->blog_categoria_id <> '')
-										<span class="post-meta-category">
-											<a href="{{ $row->categoria->url }}"><i class="fa fa-tag"></i>{{ $row->categoria->titulo }}</a>
-										</span>
-									@endif
-
-									<div class="post-meta-share">
-										<div class="addthis_inline_share_toolbox"
-										     data-url="{{ $nota_url }}"
-										     data-title="{{ $nota_titulo }}"
-										     data-description="{{ $nota_descripcion }}"
-										     data-media="{{ asset($nota_imagen) }}"></div>
-									</div>
-								</div>
-
-								<div class="post-image">
-									<img alt="{{ $nota_titulo }}" src="{{ $nota_imagen }}">
-								</div>
-
-								{!! $nota_contenido !!}
-
-							</div>
-							@if($row->tags->count() > 0)
-								<div class="post-tags">
-									@foreach($row->tags as $tag)
-										<a href="{{ $tag->url }}">{{ $tag->titulo }}</a>
-									@endforeach
-								</div>
-							@endif
-						</div>
-					</div>
-					<!-- end: Post single item-->
-				</div>
-
+	<section class="page-title" style="background-image:url(/images/background/3.jpg)">
+		<div class="container">
+			<div class="outer-box">
+				<h1>Blog</h1>
+				<ul class="bread-crumb clearfix">
+					<li><a href="/"><span class="fa fa-home"></span>Inicio</a></li>
+					<li class="active">Blog</li>
+				</ul>
 			</div>
-			{{-- FIN NOTICIA --}}
+		</div>
+	</section>
 
-			{{-- SIDEBAR --}}
-			<div class="sidebar col-md-3 mt-30">
-				<div class="pinOnScroll">
-
-					{{-- TABS NOTICIAS --}}
-					<div class="widget">
-						<div id="tabs-01" class="tabs simple">
-							<ul class="tabs-navigation">
-								<li class="active"><a href="#recientes">Recientes</a> </li>
-								<li class=""><a href="#relacionadas">Relacionadas</a> </li>
-							</ul>
-							<div class="tabs-content">
-								<div class="tab-pane active" id="recientes">
-									<div class="post-thumbnail-list">
-										@foreach($recientes as $item)
-											<div class="post-thumbnail-entry">
-												<img alt="{{ $item->titulo }}" src="{{ $item->imagen_sidebar }}">
-												<div class="post-thumbnail-content">
-													<a href="{{ $item->url }}">{{ $item->titulo }}</a>
-													<span class="post-date"><i class="fa fa-clock-o"></i> {{ $item->fecha }}</span>
-													@if($item->blog_categoria_id <> '')
-														<span class="post-category"><i class="fa fa-tag"></i> {{ $item->categoria->titulo }}</span>
-													@endif
-												</div>
-											</div>
-										@endforeach
-									</div>
-								</div>
-								<div class="tab-pane" id="relacionadas">
-									<div class="post-thumbnail-list">
-										@foreach($relacionadas as $item)
-											<div class="post-thumbnail-entry">
-												<img alt="{{ $item->titulo }}" src="{{ $item->imagen_sidebar }}">
-												<div class="post-thumbnail-content">
-													<a href="{{ $item->url }}">{{ $item->titulo }}</a>
-													<span class="post-date"><i class="fa fa-clock-o"></i> {{ $item->fecha }}</span>
-												</div>
-											</div>
-										@endforeach
-									</div>
+	<div class="blog single-post sp-two">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8">
+					<div class="news-block-three">
+						<div class="inner-box">
+							<div class="lower-content">
+								<h2>{{ $nota_titulo }}</h2>
+								<div class="post-meta">{{ $nota_descripcion }}</div>
+							</div>
+							<div class="image">
+								<img src="{{ $nota_imagen_or }}" alt="{{ $nota_titulo }}">
+							</div>
+							<div class="lower-content">
+								<div class="text">
+									{!! $nota_contenido !!}
 								</div>
 							</div>
+
+							<ul class="share-box">
+								@foreach($row->tags as $tag)
+								<li><a href="{{ $tag->url }}">{{ $tag->titulo }}</a></li>
+								@endforeach
+							</ul>
 						</div>
 					</div>
-					{{-- FIN TABS NOTICIAS --}}
-
-					{{-- TAGS --}}
-					<div class="widget  widget-tags">
-						<h4 class="widget-title">Etiquetas</h4>
-						<div class="tags">
-							@foreach($tags as $tag)
-								<a href="{{ $tag->url }}">{{ $tag->titulo }}</a>
-							@endforeach
-						</div>
-					</div>
-					{{-- FIN TAGS --}}
-
 				</div>
+				<div class="col-lg-4">
+					<aside class="sidebar">
+						@include('frontend.widgets.blog')
+					</aside>
+				</div>
+
 			</div>
 		</div>
 	</div>

@@ -53,6 +53,13 @@ class FrontendController extends Controller
         return view('frontend.pagina-servicio', compact('row'));
     }
 
+    public function clientes()
+    {
+        $rows = $this->configuracionRepo->listaItems('clientes');
+
+        return view('frontend.clientes', compact('rows'));
+    }
+
     public function pagina($pagina = '/')
     {
         $pagina === '/' ? $valor = 'home' : $valor = $pagina;
@@ -103,11 +110,8 @@ class FrontendController extends Controller
     public function blogNota($id, $url)
     {
         $row = $this->noticiaRepo->findNoticia($id, $url);
-        $tags = $this->tagRepo->paginate(10);
-        $recientes = $this->noticiaRepo->listaNoticiasRecientes($id, 4);
-        $relacionadas = $this->noticiaRepo->listaNoticiasRelacionadas($id, $row->blog_categoria_id, 4);
 
-        return view('frontend.blog-nota', compact('row','tags','recientes','relacionadas'));
+        return view('frontend.blog-nota', compact('row'));
     }
 
     public function blogCategoria($url)

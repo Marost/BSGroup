@@ -14,11 +14,11 @@ class ComposerServiceProvider extends ServiceProvider
     public function boot()
     {
         view()->composer([
-            'layouts.frontend','frontend.pagina*'
+            'frontend.layout','frontend.pagina*'
         ], FrontendComposer::class);
 
         view()->composer(
-            ['frontend.widgets.w-*'],
+            ['frontend.widgets.*'],
             WidgetsComposer::class
         );
     }
