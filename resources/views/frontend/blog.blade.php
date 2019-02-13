@@ -37,7 +37,9 @@
 									</div>
 								</div>
 								<div class="lower-content">
-									<div class="category"><a href="{{ $row->categoria->url }}">{{ $row->categoria->titulo }}</a></div>
+									@if($row->categoria)
+										<div class="category"><a href="{{ $row->categoria->url }}">{{ $row->categoria->titulo }}</a></div>
+									@endif
 									<h4><a href="{{ $row->url }}">{{ $row->titulo }}</a></h4>
 									<div class="text">{{ $row->descripcion }}</div>
 									<div class="link-btn">

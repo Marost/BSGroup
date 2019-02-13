@@ -8,7 +8,7 @@
 				<div class="col-lg-4 col-md-6 news-block-two" v-for="row in rows">
 					<div class="inner-box hvr-float-shadow">
 						<div class="lower-content">
-							<div class="category">
+							<div class="category" v-if="row.categoria">
 								<a :href="row.categoria.url">{{ row.categoria.titulo }}</a>
 							</div>
 							<h4><a :href="row.url">{{ row.titulo }}</a></h4>
