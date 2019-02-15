@@ -1,8 +1,4 @@
-@import url('flaticon.css');
-@import url('jquery.fancybox.min.css');
-@import url('custom-animate.css');
-
-/*** 
+/***
 
 ====================================================================
 	Reset
@@ -296,9 +292,6 @@ img {
 	height: 10px;
 	width: 90%;
 	opacity: 1;
-	background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 80%);
-	background: -webkit-radial-gradient(center ellipse, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 80%);
-	background: -o-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 80%);
 	background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 80%);
 }
 
@@ -385,7 +378,7 @@ img {
 }
 
 .form-group .ui-button .ui-icon:before {
-	font-family: 'FontAwesome';
+	font-family: 'FontAwesome', sans-serif;
 	content: "\f107";
 	position: absolute;
 	right: 0;
@@ -742,7 +735,7 @@ img {
 .fancybox-prev span:before {
 	content: '';
 	position: absolute;
-	font-family: 'FontAwesome';
+	font-family: 'FontAwesome', sans-serif;
 	left: 0;
 	top: 0;
 	font-size: 12px;
@@ -1845,7 +1838,7 @@ element css
 	top: 0;
 	font-size: 16px;
 	color: #0C3C60;
-	font-family: 'FontAwesome';
+	font-family: 'FontAwesome', sans-serif;
 }
 
 /*List Style Two*/
@@ -1872,7 +1865,7 @@ element css
 	height: 5px;
 	width: 5px;
 	background: #0C3C60;
-	font-family: 'FontAwesome';
+	font-family: 'FontAwesome', sans-serif;
 	-webkit-transform: rotate(-45deg);
 	    -ms-transform: rotate(-45deg);
 	        transform: rotate(-45deg);
@@ -1903,7 +1896,7 @@ element css
 	height: 7px;
 	border-radius: 50%;
 	background-color: #0C3C60;
-	font-family: 'FontAwesome';
+	font-family: 'FontAwesome', sans-serif;
 }
 
 .list-style-three li:nth-child(2):before {
@@ -1961,7 +1954,7 @@ element css
 	top: 0;
 	font-size: 16px;
 	color: #0C3C60;
-	font-family: 'FontAwesome';
+	font-family: 'FontAwesome', sans-serif;
 }
 
 /*
@@ -3260,7 +3253,7 @@ element css
 
 .sidebar .category-widget-two li a:before {
 	content: "\f105";
-	font-family: 'FontAwesome';
+	font-family: 'FontAwesome', sans-serif;
 	font-size: 14px;
 	left: 0;
 	width: 20px;
@@ -9282,7 +9275,7 @@ element css
 	top: 1px;
 	line-height: 15px;
 	font-size: 13px;
-	font-family: 'FontAwesome';
+	font-family: 'FontAwesome', sans-serif;
 	color: #0C3C60;
 }
 
@@ -9837,7 +9830,7 @@ element css
 	top: 3px;
 	line-height: 15px;
 	font-size: 16px;
-	font-family: 'FontAwesome';
+	font-family: 'FontAwesome', sans-serif;
 }
 
 /*=== Newsletter Widget ===*/

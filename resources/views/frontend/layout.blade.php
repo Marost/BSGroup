@@ -28,8 +28,7 @@
 	{!! Html::style('https://s3.amazonaws.com/icomoon.io/114779/Socicon/style.css?9ukd8d') !!}
 
 	{{-- Enlaces Internos --}}
-	<link href="/css/style.css" rel="stylesheet">
-	<link href="/css/responsive.css" rel="stylesheet">
+	{!! Html::style(mix('css/estilos.css')) !!}
 
 	@yield('contenido_header')
 

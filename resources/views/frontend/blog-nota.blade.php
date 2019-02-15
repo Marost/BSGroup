@@ -71,6 +71,10 @@
 							<div class="lower-content">
 								<h2>{{ $nota_titulo }}</h2>
 								<div class="post-meta">{{ $nota_descripcion }}</div>
+								<ul class="opciones">
+									<li><a href="#">Categoria</a></li>
+									<li>12 de Octubre del 2019</li>
+								</ul>
 							</div>
 							<div class="image">
 								<img src="{{ $nota_imagen_or }}" alt="{{ $nota_titulo }}">
@@ -101,4 +105,5 @@
 @stop
 
 @section('contenido_footer')
+	<script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c661e1f0c169bd3"></script>
 @stop
