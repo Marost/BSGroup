@@ -72,8 +72,16 @@
 								<h2>{{ $nota_titulo }}</h2>
 								<div class="post-meta">{{ $nota_descripcion }}</div>
 								<ul class="opciones">
-									<li><a href="#">Categoria</a></li>
-									<li>12 de Octubre del 2019</li>
+									@if($row->categoria)
+									<li>
+										<a href="{{ $row->categoria->url }}">
+											<i class="fa fa-tag" aria-hidden="true"></i> {{ $row->categoria->titulo }}
+										</a>
+									</li>
+									@endif
+									<li>
+										<i class="fa fa-calendar-o" aria-hidden="true"></i> {{ $nota_fecha }}
+									</li>
 								</ul>
 							</div>
 							<div class="image">
