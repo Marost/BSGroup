@@ -8576,7 +8576,7 @@ element css
 }
 
 .single-post .news-block-three .lower-content .post-meta {
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 
 .single-post .news-block-three .lower-content p {
@@ -9911,4 +9911,21 @@ element css
 
 .main-footer .footer-bottom p a:hover {
 	text-decoration: underline;
+}
+
+
+.opciones{
+	margin-bottom: 10px;
+
+	li {
+		display: inline-block;
+
+		&:first-child{
+			margin-right: 20px;
+		}
+
+		i{
+			color: #ad9054;
+		}
+	}
 }
