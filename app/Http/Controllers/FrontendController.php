@@ -81,9 +81,8 @@ class FrontendController extends Controller
     {
         $rules = [
             'nombres' => 'required',
-            'email' => 'required|email',
             'celular' => 'required',
-            'asunto' => 'required',
+            'email' => 'required|email',
             'mensaje' => 'required'
         ];
 

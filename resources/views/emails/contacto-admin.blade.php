@@ -9,6 +9,5 @@ __{{ $request->nombres }}__, te envio el siguiente mensaje:
 ## Datos
 - Email: __{{ $request->email }}__
 - Celular: __{{ $request->celular }}__
-- Necesito el Software para: __{{ $request->asunto }}__
 
 @endcomponent

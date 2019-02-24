@@ -1,5 +1,5 @@
 <template>
-    <section class="map-section map-two">
+    <section id="contacto" class="map-section map-two">
         <div class="home-google-map">
             <div class="google-map" id="map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d975.272494908404!2d-76.97153337079949!3d-12.105992399464235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c767bc469a67%3A0xac42a3278d713fd0!2sBS+Group+-+Business+Solutions+Group!5e0!3m2!1ses!2spe!4v1549823001698" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -21,12 +21,12 @@
                             </div>
                             <div class="col-md-6 col-sm-6 column">
                                 <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Email" :class="{'input-error': errors.email}" v-model="datos.email">
+                                    <input type="text" class="form-control" placeholder="Celular" :class="{'input-error': errors.celular}" v-model="datos.celular">
                                 </div>
                             </div>
                             <div class="col-md-12 col-sm-12 column">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Asunto" :class="{'input-error': errors.asunto}" v-model="datos.asunto">
+                                    <input type="email" class="form-control" placeholder="Email" :class="{'input-error': errors.email}" v-model="datos.email">
                                 </div>
                             </div>
                             <div class="col-md-12 col-sm-12 column">
@@ -52,6 +52,16 @@
 </template>
 
 <style scoped>
+    .consultation h3{
+        color: #ffffff;
+        font-weight: bold;
+    }
+    
+    .btn-style-one{
+        color: #0C3C60;
+        background-color: #ffffff;
+    }
+    
     .loader {
         height: 4px;
         width: 100% !important;
@@ -83,12 +93,12 @@
     }
     
     .input-error{
-        border: 2px solid #c3000f;
+        border: 2px solid #c3000f !important;
     }
 </style>
 
 <script>
-    import axios from 'axios'
+    import axios from '../axios'
 
     export default {
         data: function () {
@@ -99,7 +109,7 @@
                 datos: {
                     nombres: '',
                     email: '',
-                    asunto: '',
+                    celular: '',
                     mensaje: ''
                 }
             }
@@ -115,12 +125,12 @@
                     this.datos = {
                         nombres: '',
                         email: '',
-                        asunto: '',
+                        celular: '',
                         mensaje: ''
                     };
                 }).catch(error => {
                     this.enviado = false;
-                    this.errors = error.response.data;
+                    this.errors = error.response.data.errors;
                     this.loading = false;
                 });
             },

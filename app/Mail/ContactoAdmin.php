@@ -36,10 +36,11 @@ class ContactoAdmin extends Mailable
     public function build()
     {
         $email = Configuracion::where('tipo','contacto')->where('nombre','email')->first()->valor;
+        $empresa = Configuracion::where('tipo','web')->where('nombre','titulo')->first()->valor;
 
         return $this->markdown('emails.contacto-admin')
             ->from($email)
             ->to($email)
-            ->subject($this->request->nombres.' te envío un mensaje - Sis365');
+            ->subject($this->request->nombres.' te envío un mensaje - ' . $empresa);
     }
 }
