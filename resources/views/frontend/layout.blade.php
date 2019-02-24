@@ -20,7 +20,7 @@
 	{{-- Enlace externos --}}
 	{!! Html::style('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700') !!}
 	{!! Html::style('https://fonts.googleapis.com/css?family=Work+Sans:400,500,700') !!}
-	{!! Html::style('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.1/css/font-awesome.min.css') !!}
+	{!! Html::style('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css') !!}
 	{!! Html::style('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css') !!}
 	{!! Html::style('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css') !!}
 	{!! Html::style('https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.0.2/css/hover-min.css') !!}
@@ -264,6 +264,8 @@
 
 <!-- Custom script -->
 <script src="/js/script.js"></script>
+{!! Html::script(mix('js/manifest.js')) !!}
+{!! Html::script(mix('js/vendor.js')) !!}
 {!! Html::script(mix('js/forms.js')) !!}
 
 {!! $conf_script !!}
