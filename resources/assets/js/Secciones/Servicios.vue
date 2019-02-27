@@ -1,5 +1,5 @@
 <template>
-	<div class="three-item-carousel owl-carousel owl-theme owl-dot-none owl-nav-style-one">
+	<div class="three-item-carousel owl-carousel owl-theme owl-dot-none owl-nav-style-one wow fadeInUp">
 		
 		<div class="service-block-six" v-for="row in rows">
 			<div class="inner-box hvr-bounce-to-bottom">

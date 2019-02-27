@@ -11,5 +11,5 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/assets/js/forms.js', 'public/js').version()
+mix.js('resources/assets/js/forms.js', 'public/js').version().extract(['axios','vue'])
     .sass('resources/assets/sass/estilos.scss', 'public/css').version();

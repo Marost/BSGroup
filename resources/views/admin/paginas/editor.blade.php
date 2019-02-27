@@ -144,9 +144,9 @@
         style: '',
 		canvas: {
             styles: [
-                '/css/bootstrap.css',
-                '/css/style.css',
-                '/css/responsive.css',
+                'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css',
+				'https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.0.2/css/hover-min.css',
+                '/css/estilos.css',
 			],
 			scripts: []
 		},

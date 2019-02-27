@@ -1,5 +1,5 @@
 <template>
-	<section class="blog-section sp-two">
+	<section class="blog-section sp-two wow fadeInUp">
 		<div class="container">
 			<div class="sec-title centered style-two">
 				<h1>Nuestro Blog</h1>

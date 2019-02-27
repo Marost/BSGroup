@@ -255,7 +255,7 @@
 {!! Html::script('https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js') !!}
 {!! Html::script('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js') !!}
 <script src="/js/popover.js"></script>
-{!! Html::script('https://cdnjs.cloudflare.com/ajax/libs/wow/1.0.1/wow.min.js') !!}
+{!! Html::script('https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js') !!}
 {!! Html::script('https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/owl.carousel.min.js') !!}
 {!! Html::script('https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.10/jquery.mixitup.min.js') !!}
 {!! Html::script('https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js') !!}
