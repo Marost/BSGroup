@@ -68,7 +68,6 @@
 		<link rel="stylesheet" type="text/css" href="/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
 		<link rel="stylesheet" type="text/css" href="/fonts/font-awesome/css/font-awesome.css">
 		<link rel="stylesheet" type="text/css" href="/css/settings.css">
-		<style type="text/css">.rev_slider .slotholder:after{width:100%;  height:100%;  content:"";  position:absolute;  left:0;  top:0;  pointer-events:none;  background:rgba(0,0,0,0.5)}</style>
 		<style type="text/css">#rev_slider_93_1 .uranus.tparrows{width:50px; height:50px; background:rgba(255,255,255,0)}#rev_slider_93_1 .uranus.tparrows:before{width:50px; height:50px; line-height:50px; font-size:40px; transition:all 0.3s;-webkit-transition:all 0.3s}#rev_slider_93_1 .uranus.tparrows:hover:before{opacity:0.75}</style>
 	@endif
 @stop
@@ -134,10 +133,10 @@
 										 data-textAlign="['center','center','center','center']"
 										 data-paddingtop="[0,0,0,0]"
 										 data-paddingright="[0,0,0,0]"
-										 data-paddingbottom="[0,0,0,0]"
+										 data-paddingbottom="[20,20,20,20]"
 										 data-paddingleft="[0,0,0,0]"
 
-										 style="z-index: 6; width: 100%;">
+										 style="z-index: 6; width: 100%;background-color:rgba(0,0,0,0.4);">
 										<!-- LAYER NR. 3 -->
 										<h2 class="tp-caption   tp-resizeme"
 											id="slide-{{ $slider->id }}-layer-4"
@@ -172,7 +171,7 @@
 										   data-y="['top','top','top','top']" data-voffset="['0','0','0','0']"
 										   data-fontsize="['16','17','17','17']"
 										   data-fontweight="['600','500','500','500']"
-										   data-width="['none','210','210','166']"
+										   data-width="['210','210','210','166']"
 										   data-height="['none','none','none','44']"
 										   data-whitespace="normal"
 

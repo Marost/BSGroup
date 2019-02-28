@@ -1,11 +1,5 @@
 <template>
     <section id="contacto" class="map-section map-two">
-        <div class="home-google-map">
-            <div class="google-map" id="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d975.272494908404!2d-76.97153337079949!3d-12.105992399464235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c767bc469a67%3A0xac42a3278d713fd0!2sBS+Group+-+Business+Solutions+Group!5e0!3m2!1ses!2spe!4v1549823001698" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
-        </div>
-        
         <div class="container">
             <div class="consultation" v-if="!enviado">
                 <div class="sec-title light">
@@ -48,10 +42,26 @@
                 <h3>Tu mensaje ha sido enviado con éxito.</h3>
             </div>
         </div>
+        
+        <div class="home-google-map">
+            <div class="google-map" id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d975.272494908404!2d-76.97153337079949!3d-12.105992399464235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c767bc469a67%3A0xac42a3278d713fd0!2sBS+Group+-+Business+Solutions+Group!5e0!3m2!1ses!2spe!4v1549823001698" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
     </section>
 </template>
 
 <style scoped>
+    #contacto .container,
+    .home-google-map{
+        width: 50%;
+        display: inline-block;
+    }
+    
+    .map-section.map-two .home-google-map .google-map{
+        height: 100%;
+    }
+    
     .consultation h3{
         color: #ffffff;
         font-weight: bold;

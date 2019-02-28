@@ -5191,168 +5191,6 @@ element css
 ====================================================================
 
 ***/
-
-/* style two */
-
-.main-slider2 {
-	min-height: 600px;
-}
-
-.main-slider2 .container-fluid {
-	padding: 0;
-}
-
-.main-slider2 .slider-wrapper {
-	position: relative;
-}
-
-.main-slider2 .slider-wrapper .image img {
-	min-height: 500px;
-	width: 100%;
-	max-width: none;
-}
-
-.main-slider2 .slider-caption {
-	position: absolute;
-	left: 0;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	z-index: 5;
-}
-
-.main-slider2 .slider-caption .inner-box {
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 0 30px;
-}
-
-.main-slider2 .slider-caption-bg {
-	max-width: 570px;
-	background-color: rgba(255, 255, 255, 0.70);
-	padding: 50px;
-}
-
-.main-slider2 h3 {
-	position: relative;
-	color: #fff;
-	font-size: 3.75rem;
-	font-weight: 700;
-	line-height: 62px;
-	margin-bottom: 1.25rem;
-}
-
-.main-slider2 .dark h1 {
-	color: #222;
-}
-
-.main-slider2 h2 {
-	position: relative;
-	color: #fff;
-	font-size: 3.125rem;
-	font-weight: 500;
-	line-height: 1.2em;
-	font-family: 'Montserrat', sans-serif;
-}
-
-.main-slider2 .dark h2 {
-	color: #222;
-	font-weight: 600;
-	margin-bottom: 1.25rem;
-	font-size: 2.625rem;
-}
-
-.main-slider2 .link-btn {
-	padding-top: 30px;
-	margin: 0 -10px;
-}
-
-.main-slider2 .theme-btn {
-	margin: 0 10px 1.25rem;
-}
-
-.main-slider2 .text {
-	position: relative;
-	font-size: 1.0625rem;
-	font-weight: 400;
-	max-width: 600px;
-	color: #fff;
-	line-height: 1.7em;
-	margin-bottom: 30px;
-}
-
-.main-slider2 .dark .text {
-	color: #222;
-	margin-bottom: 0;
-}
-
-.main-slider2 .slide-overlay {
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	background-color: rgba(0, 0, 0, 0.50);
-	z-index: 3;
-}
-
-.main-slider2.style-two .slide-overlay {
-	background-color: rgba(20, 22, 26, 0.1)
-}
-
-/* slide animation */
-
-.main-slider2 .owl-item .slider-caption * {
-	-webkit-animation-duration: 1s;
-	animation-duration: 1s;
-	-webkit-animation-fill-mode: both;
-	animation-fill-mode: both;
-}
-
-.main-slider2 .owl-item.active .slider-caption h1 {
-	-webkit-animation-delay: .5s;
-	animation-delay: .5s;
-	-webkit-animation-name: fadeInDown;
-	animation-name: fadeInDown;
-}
-
-.main-slider2 .owl-item.active .slider-caption h2 {
-	-webkit-animation-delay: .9s;
-	animation-delay: .9s;
-	-webkit-animation-name: fadeIn;
-	animation-name: fadeIn;
-}
-
-.main-slider2 .owl-item.active .slider-caption .text {
-	-webkit-animation-delay: .5s;
-	animation-delay: .5s;
-	-webkit-animation-name: fadeIn;
-	animation-name: fadeIn;
-}
-
-.main-slider2 .owl-item.active .slider-caption .link-btn {
-	-webkit-animation-delay: 1s;
-	animation-delay: 1s;
-	-webkit-animation-name: fadeInUp;
-	animation-name: fadeInUp;
-}
-
-.main-slider2 .owl-item.active .slider-caption .slider-caption-bg {
-	-webkit-animation-delay: 1s;
-	animation-delay: 1s;
-	-webkit-animation-name: fadeInDown;
-	animation-name: fadeInDown;
-}
-
 /* slide nav */
 
 .slide-nav .owl-nav {
@@ -8763,6 +8601,7 @@ element css
 
 .map-section {
 	position: relative;
+	display: flex;
 }
 
 .home-google-map .google-map {
@@ -8793,12 +8632,9 @@ element css
 }
 
 .map-section .consultation {
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	max-width: 470px;
 	padding: 68px 30px 50px;
 	background-color: #0C3C60;
+	min-height: 400px;
 }
 
 .map-section .contact-form button {
