@@ -9768,3 +9768,22 @@ element css
 		}
 	}
 }
+
+
+
+.nosotros-imagen{
+	position: relative;
+	z-index: 1;
+
+	&:after {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		z-index: -1;
+		top: 25px;
+		right: 25px;
+		border: 10px solid #ad9054;
+	}
+}
