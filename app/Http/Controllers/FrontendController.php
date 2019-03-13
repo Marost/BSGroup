@@ -67,7 +67,7 @@ class FrontendController extends Controller
         $row = $this->paginaRepo->findPagina($valor);
 
         if($row){
-            $sliders = $this->configuracionRepo->listaItems('slider-pagina-'.$row->id);
+            $sliders = $this->servicioRepo->listaRegistros();
             return view('frontend.pagina', compact('row','sliders'));
         }else{
             abort(404);

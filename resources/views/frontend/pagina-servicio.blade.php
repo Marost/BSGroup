@@ -80,7 +80,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <div class="image mb-30">
+                    <div class="image mb-30 nosotros-imagen">
                         <img src="{{ $row_imagen_original }}" alt="{{ $row_titulo }}">
                     </div>
                 </div>
@@ -94,8 +94,6 @@
     </section>
 
     <seccion-contacto></seccion-contacto>
-
-    <seccion-blog></seccion-blog>
 @stop
 
 @section('contenido_footer')

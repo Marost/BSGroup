@@ -86,6 +86,7 @@
 					<!--Top Right-->
 					<div class="top-right pull-right">
 						<div class="social-links clearfix">
+							<a href="/#contacto">Contáctanos</a>
 							<a href="https://www.facebook.com/BSGroup.Peru"><span class="fa fa-facebook-f"></span></a>
 						</div>
 					</div>

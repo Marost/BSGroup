@@ -82,7 +82,7 @@
 						@foreach($sliders as $slider)
 						<li data-index="rs-{{ $slider->id }}" data-transition="parallaxhorizontal" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb="assets/100x50_31dd5-image-1.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="Slide">
 							<!-- MAIN IMAGE -->
-							<img src="{{ $slider->imagen_contenido }}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+							<img src="{{ $slider->imagen_original }}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
 							<!-- LAYERS -->
 							<div id="rrzm_{{ $slider->id }}" class="rev_row_zone rev_row_zone_middle" style="z-index: 5;">
 
@@ -162,16 +162,16 @@
 											data-paddingbottom="[0,0,0,0]"
 											data-paddingleft="[20,20,0,20]"
 
-											style="z-index: 7; white-space: normal; font-size: 80px; line-height: 100px; font-weight: 700; color: #ffffff; letter-spacing: 0px; display: block;font-family:Montserrat;">{{ $slider->valor }}</h2>
+											style="z-index: 7; white-space: normal; font-size: 80px; line-height: 100px; font-weight: 700; color: #ffffff; letter-spacing: 0px; display: block;font-family:Montserrat;">{{ $slider->titulo }}</h2>
 
 										<!-- LAYER NR. 4 -->
 										<a class="tp-caption rev-btn "
-										   href="#servicios" target="_self"			 id="slide-{{ $slider->id }}-layer-6"
+										   href="{{ $slider->url }}" target="_self"			 id="slide-{{ $slider->id }}-layer-6"
 										   data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']"
 										   data-y="['top','top','top','top']" data-voffset="['0','0','0','0']"
 										   data-fontsize="['16','17','17','17']"
 										   data-fontweight="['600','500','500','500']"
-										   data-width="['210','210','210','166']"
+										   data-width="['auto','auto','auto','auto']"
 										   data-height="['none','none','none','44']"
 										   data-whitespace="normal"
 
@@ -181,7 +181,7 @@
 										   data-responsive="off"
 										   data-frames='[{"delay":"+990","speed":800,"frame":"0","from":"x:left;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":100,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"250","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(0,0,0);bg:rgba(255,255,255,1);bc:rgb(255,255,255);"}]'
 										   data-margintop="[0,0,0,0]"
-										   data-marginright="[10,10,10,10]"
+										   data-marginright="[0,0,0,0]"
 										   data-marginbottom="[0,0,0,0]"
 										   data-marginleft="[0,0,0,0]"
 										   data-textAlign="['center','center','center','center']"
@@ -190,33 +190,7 @@
 										   data-paddingbottom="[12,12,12,12]"
 										   data-paddingleft="[50,50,50,0]"
 
-										   style="z-index: 8; white-space: normal; font-size: 16px; line-height: 17px; font-weight: 600; color: rgba(255,255,255,1); display: inline-block;font-family:Montserrat;text-transform:uppercase;background-color:rgb(12,60,96);border-color:rgb(12,60,96);border-style:solid;border-width:2px 2px 2px 2px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;text-decoration: none;">Servicios </a>
-
-										<!-- LAYER NR. 5 -->
-										<a class="tp-caption rev-btn "
-										   href="#contacto" target="_self" rel="nofollow"			 id="slide-{{ $slider->id }}-layer-8"
-										   data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']"
-										   data-y="['top','top','top','top']" data-voffset="['0','0','0','0']"
-										   data-width="['210','210','210','152']"
-										   data-height="['none','none','none','44']"
-										   data-whitespace="normal"
-
-										   data-type="button"
-										   data-actions=''
-										   data-responsive_offset="on"
-										   data-responsive="off"
-										   data-frames='[{"delay":"+1260","speed":800,"frame":"0","from":"x:right;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":100,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"250","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(255,255,255);bg:rgb(12,60,96);bc:rgb(12,60,96);"}]'
-										   data-margintop="[0,0,0,0]"
-										   data-marginright="[0,0,0,0]"
-										   data-marginbottom="[0,0,0,0]"
-										   data-marginleft="[10,10,10,10]"
-										   data-textAlign="['center','center','center','center']"
-										   data-paddingtop="[12,12,12,12]"
-										   data-paddingright="[50,50,50,0]"
-										   data-paddingbottom="[12,12,12,12]"
-										   data-paddingleft="[50,50,50,0]"
-
-										   style="z-index: 9; min-width: 210px; max-width: 210px; white-space: normal; font-size: 17px; line-height: 17px; font-weight: 500; color: rgba(255,255,255,1); display: inline-block;font-family:Roboto;text-transform:uppercase;border-color:rgb(255,255,255);border-style:solid;border-width:2px 2px 2px 2px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;text-decoration: none;">Contáctanos </a>
+										   style="z-index: 8; white-space: normal; font-size: 16px; line-height: 17px; font-weight: 600; color: rgba(255,255,255,1); display: inline-block;font-family:Montserrat;text-transform:uppercase;background-color:rgb(12,60,96);border-color:rgb(12,60,96);border-style:solid;border-width:2px 2px 2px 2px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;text-decoration: none;">Más información</a>
 									</div>
 								</div>
 							</div>
