@@ -87,7 +87,7 @@
 					<div class="top-right pull-right">
 						<div class="social-links clearfix">
 							<a href="/#contacto">Contáctanos</a>
-							<a href="https://www.facebook.com/BSGroup.Peru"><span class="fa fa-facebook-f"></span></a>
+							<a href="https://www.facebook.com/consultas.bsgroup" target="_blank"><span class="fa fa-facebook-f"></span></a>
 						</div>
 					</div>
 				</div>
@@ -189,7 +189,7 @@
 												Business Solutions Group es una Firma de asesoría y consultoría empresarial, que brinda soluciones efectivas para la gestión exitosa de las empresas.
 											</div>
 											<ul class="social-icon-three">
-												<li><a target="_blank" href="https://www.facebook.com/BSGroup.Peru"><i class="fa fa-facebook"></i></a></li>
+												<li><a target="_blank" href="https://www.facebook.com/consultas.bsgroup"><i class="fa fa-facebook"></i></a></li>
 											</ul>
 										</div>
 									</div>
