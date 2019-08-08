@@ -79,6 +79,14 @@ class Configuracion extends BaseEntity {
         return $valor;
     }
 
+    public function getImagenGaleriaAttribute()
+    {
+        $decode = json_decode($this->contenido, true);
+        $imagen = $decode['imagen'];
+        $carpeta = $decode['imagen_carpeta'];
+        return "/upload/".$carpeta."150x150/".$imagen;
+    }
+
     public function getImagenAdminAttribute()
     {
         $decode = json_decode($this->contenido, true);
