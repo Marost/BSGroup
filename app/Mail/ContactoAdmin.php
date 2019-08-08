@@ -35,12 +35,11 @@ class ContactoAdmin extends Mailable
      */
     public function build()
     {
-        $email = Configuracion::where('tipo','contacto')->where('nombre','email')->first()->valor;
         $empresa = Configuracion::where('tipo','web')->where('nombre','titulo')->first()->valor;
 
         return $this->markdown('emails.contacto-admin')
-            ->from($email)
-            ->to($email)
+            ->from('noreply@bsgroup.com.pe')
+            ->to(['jorgeochoa@bsgroup.com.pe','consultas@bsgroup.com.pe'])
             ->subject($this->request->nombres.' te envío un mensaje - ' . $empresa);
     }
 }
