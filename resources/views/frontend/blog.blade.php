@@ -50,6 +50,12 @@
 						</div>
 						@endforeach
 					</div>
+
+					<div class="row">
+						<div class="pagination">
+							{!! $rows->appends(Request::all())->render() !!}
+						</div>
+					</div>
 				</div>
 				<div class="col-lg-4">
 					<aside class="sidebar">
