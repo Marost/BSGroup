@@ -186,7 +186,7 @@
 										</div>
 										<div class="widget-content">
 											<div class="text">
-												Business Solutions Group es una firma de asesoría y consultoría empresarial, que brinda soluciones efectivas para la gestión exitosa de las empresas.
+												Business Solutions Group es una Firma de asesoría y consultoría empresarial, que brinda soluciones efectivas para la gestión exitosa de las empresas.
 											</div>
 											<ul class="social-icon-three">
 												<li><a target="_blank" href="https://www.facebook.com/BSGroup.Peru"><i class="fa fa-facebook"></i></a></li>
